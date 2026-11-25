@@ -1,5 +1,8 @@
 # Changes
 
+## 2026-11-25 (rev20261125_c)
+- carousels.csv can now have a `post_date` column (YYYY-MM-DD). A dated carousel posts at the 12:00 run on or after that date, without waiting for its block to be posted from GitHub. Lets carousels go out from GitHub while the reels are still posted from the Mac.
+
 ## 2026-11-25 (rev20261125_b)
 - `check` now looks up the Instagram account ID when the IG_USER_ID secret is missing (Adam couldn't open Business Settings: signed in via Instagram there, and his Facebook login shows no business assets). It lists every Instagram account the token can see, with IDs, then stops with a red run so nothing is posted.
 - Also asks for Instagram accounts assigned directly to the system user (first run found no Page and no portfolio access).

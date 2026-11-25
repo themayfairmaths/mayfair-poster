@@ -4,8 +4,8 @@ Usage: python post.py check   -> verify token, account and publishing limit (pos
        python post.py post    -> post the next block (all its parts, last part first)
        python post.py test FILE.mp4 -> post one specific queue file (for a first test)
        python post.py carousel [FOLDER] -> post the next carousel that is due (or one named folder)
-Carousels: carousels.csv (after_block,folder,carousel_name) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
-A carousel is due once every reel in its after_block was posted on an EARLIER day (Perth time), so it goes out at
+Carousels: carousels.csv (after_block,folder,carousel_name[,post_date YYYY-MM-DD]) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
+A carousel with a post_date is due from midday on that date. Otherwise it is due once every reel in its after_block was posted on an EARLIER day (Perth time), so it goes out at
 midday the day after its reels. One carousel per run. Needs a public repo (Instagram fetches the JPEGs by URL)."""
 import csv, os, sys, time, json, datetime, urllib.request, urllib.parse, urllib.error
 
@@ -119,8 +119,12 @@ def post_next_carousel():
     blocks = {}
     if os.path.exists('blocks.csv'):
         for r in csv.DictReader(open('blocks.csv')): blocks.setdefault(int(r['block']), []).append(r['queue_file'])
-    for r in sorted(csv.DictReader(open('carousels.csv')), key=lambda r: int(r['after_block'])):
+    rows = list(csv.DictReader(open('carousels.csv')))
+    for r in sorted(rows, key=lambda r: (r.get('post_date') or '9999', int(r.get('after_block') or 0))):
         if 'carousel:' + r['folder'] in done: continue
+        if (r.get('post_date') or '').strip():                 # dated carousel: due from 12:00 on that Perth date
+            if r['post_date'].strip() > today: print(f"Next carousel '{r['carousel_name']}' is planned for {r['post_date']}."); return
+            post_carousel(r['folder']); return
         files = blocks.get(int(r['after_block']), [])
         if not files or any(f not in done for f in files): print(f"Next carousel '{r['carousel_name']}' waits for block {r['after_block']}."); return
         if max(done[f] for f in files) >= today: print(f"Block {r['after_block']} went out today - '{r['carousel_name']}' goes tomorrow at midday."); return

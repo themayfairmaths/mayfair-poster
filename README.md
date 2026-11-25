@@ -22,7 +22,7 @@ Each day it takes the first block in `blocks.csv` that still has unposted parts 
 
 ## Carousels (midday)
 At 12:00 Perth the workflow posts the carousel for the previous day's block, if one is ready.
-- `carousels.csv`: one row per carousel: `after_block,folder,carousel_name` (block number from blocks.csv).
+- `carousels.csv`: one row per carousel: `after_block,folder,carousel_name,post_date`. With a `post_date` (YYYY-MM-DD) it posts at midday on that date; leave it blank to post the day after its block went out from GitHub.
 - `carousels/<folder>/`: `slide01.jpg` ... `slide10.jpg` (JPEG only, 2-10 slides, 1080x1350) and `caption.txt`.
 - It waits until every reel in that block was posted on an earlier day, so it always lands at midday the day after. One carousel per run; if a day is missed it carries on next time.
 - Needs the public repo and `COVER_BASE_URL` (the carousel link is worked out from it).
