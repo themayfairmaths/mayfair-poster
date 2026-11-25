@@ -1,0 +1,5 @@
+The maths behind a vortex street, in 10 slides. Navier-Stokes, the vorticity-streamfunction trick, why only Re matters, how the grid turns calculus into arithmetic, the stability limits, why the wake starts swinging at Re ≈ 47, and how close our solver gets to wind-tunnel data. Swipe and save it for later.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #navierstokes #vortexshedding #karmanvortexstreet #math #maths #engineering #python #stem
