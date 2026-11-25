@@ -1,0 +1,5 @@
+Phantom traffic jams: no crash, no roadworks, just drivers braking a little. Four simple rules on a ring road are enough to make jams appear out of nothing.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#traffic #phantomjam #cellularautomata #math #maths #physics #engineering #python #visualmath #stem
