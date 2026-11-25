@@ -32,7 +32,8 @@ BUSINESS_ID = os.environ.get('BUSINESS_ID', '2181762142082848')   # Meta busines
 def discover():
     """Print every Instagram account this token can see, with its ID (for the IG_USER_ID secret). Never fails."""
     found = {}
-    tries = [('Pages this token can manage', f'{G}/me/accounts', {'fields': 'name,instagram_business_account{id,username}'}),
+    tries = [('Instagram accounts assigned to this system user', f'{G}/me/assigned_instagram_accounts', {'fields': 'id,username'}),
+             ('Pages this token can manage', f'{G}/me/accounts', {'fields': 'name,instagram_business_account{id,username}'}),
              ('Business portfolio: Instagram business accounts', f'{G}/{BUSINESS_ID}/instagram_business_accounts', {'fields': 'id,username'}),
              ('Business portfolio: owned Instagram accounts', f'{G}/{BUSINESS_ID}/owned_instagram_accounts', {'fields': 'id,username'}),
              ('Business portfolio: owned Pages', f'{G}/{BUSINESS_ID}/owned_pages', {'fields': 'name,instagram_business_account{id,username}'})]

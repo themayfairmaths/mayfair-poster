@@ -2,6 +2,7 @@
 
 ## 2026-11-25 (rev20261125_b)
 - `check` now looks up the Instagram account ID when the IG_USER_ID secret is missing (Adam couldn't open Business Settings: signed in via Instagram there, and his Facebook login shows no business assets). It lists every Instagram account the token can see, with IDs, then stops with a red run so nothing is posted.
+- Also asks for Instagram accounts assigned directly to the system user (first run found no Page and no portfolio access).
 
 ## 2026-11-25 (rev20261125_a)
 - Daily reels moved from 07:41 to 08:00 Perth (Adam: cleaner time). Cron '0 0 * * *'.
