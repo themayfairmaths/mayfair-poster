@@ -1,0 +1,5 @@
+1,000 starting points packed into a ball 0.001 wide. They move as one dot for a while, then stretch out and smear across the whole attractor. You can know the rules exactly and still not know the future.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #maths #physics #excel #butterflyeffect #science

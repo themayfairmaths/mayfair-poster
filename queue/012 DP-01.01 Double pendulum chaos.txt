@@ -1,0 +1,5 @@
+One pendulum swings like clockwork. Hang a second one off the end and it becomes chaotic - it flips, whips and never repeats the same swing twice. Four equations, solved step by step with Runge-Kutta.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #doublependulum #physics #maths #excel #engineering #science

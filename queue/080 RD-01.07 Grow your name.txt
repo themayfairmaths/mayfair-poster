@@ -1,0 +1,5 @@
+Growing MAYFAIR MATH: seed the grid with letters and let reaction-diffusion take over. Comment a word and I'll grow it next.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

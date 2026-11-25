@@ -1,0 +1,5 @@
+Same equations, change one number. ρ = 14: the path spirals into a fixed point. ρ = 28: chaos, the butterfly. ρ = 160: a single loop repeated for ever. Order, chaos, order again.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #maths #physics #excel #butterflyeffect #science

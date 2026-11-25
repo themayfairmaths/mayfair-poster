@@ -1,0 +1,5 @@
+Zooming ten million times into the edge of the Mandelbrot set, near seahorse valley. Every pixel is one question: start at z = 0, repeat z → z² + c - does it fly off to infinity? Colour = how fast it escapes. One line of algebra, infinite detail.
+
+Rendered in Python with exactly the same iteration as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #maths #mathart #excel #juliaset #complexnumbers

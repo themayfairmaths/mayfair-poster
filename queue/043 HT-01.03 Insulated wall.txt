@@ -1,0 +1,5 @@
+Hot inside, cold outside. A solid wall drops temperature in a straight line and leaks lots of heat. Add an insulation layer and almost all of the drop happens inside it. Then put a steel stud through the insulation - a thermal bridge - and watch heat sneak through it.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#heattransfer #thermodynamics #engineering #excel #mechanicalengineering #physics #maths #buildingphysics #insulation #civilengineering

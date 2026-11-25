@@ -1,0 +1,5 @@
+Two wave makers side by side. Where crest meets crest the water piles up; where crest meets trough it cancels into calm lines. Move the sources apart and you get more, thinner beams.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science

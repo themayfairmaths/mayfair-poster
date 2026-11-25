@@ -1,0 +1,5 @@
+Four values of c, four Julia sets: Douady's rabbit, a dragon, spirals - and dust. When c is inside the Mandelbrot set the Julia set is one connected piece; when c is outside it shatters into infinitely many specks.
+
+Rendered in Python with exactly the same iteration as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #maths #mathart #excel #juliaset #complexnumbers

@@ -1,0 +1,5 @@
+Move the wave maker and the rings bunch up in front and stretch out behind. In front: shorter wavelength, higher pitch. Behind: longer, lower. That's why a siren drops in pitch as it passes.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science #sound #acoustics

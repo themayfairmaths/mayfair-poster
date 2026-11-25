@@ -1,0 +1,5 @@
+Sweep r from 2.5 to 4 and plot where x ends up. One value splits into 2, then 4, then 8… and at r ≈ 3.57 it becomes chaos - with calm windows hidden inside. The most famous picture in chaos theory, from one line of algebra.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #logisticmap #maths #fractal #excel #bifurcation #science

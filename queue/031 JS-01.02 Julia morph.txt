@@ -1,0 +1,5 @@
+Fix c, start z at each pixel and repeat z → z² + c. That's a Julia set. Walk c slowly round a circle and the fractal melts from one shape into the next.
+
+Rendered in Python with exactly the same iteration as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #maths #mathart #excel #juliaset #complexnumbers

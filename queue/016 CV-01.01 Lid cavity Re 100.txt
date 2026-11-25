@@ -1,0 +1,5 @@
+A box of fluid with a sliding lid (Re 100). The lid drags the fluid round into one big vortex, sitting up near the top.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics

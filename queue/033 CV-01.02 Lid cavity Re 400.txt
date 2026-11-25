@@ -1,0 +1,5 @@
+Same box, faster lid (Re 400). The main vortex moves towards the centre and a corner eddy grows bottom-right.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics

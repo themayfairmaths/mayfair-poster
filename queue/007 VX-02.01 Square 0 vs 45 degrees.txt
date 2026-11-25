@@ -1,0 +1,7 @@
+Same square. Turn it 45°.
+
+Flat face first, the flow lets go at the front corners. Point first, it splits and peels off the sides. The diamond is wider to the flow and sheds a little slower (St 0.131 vs 0.139).
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

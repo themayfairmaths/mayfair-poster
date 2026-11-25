@@ -1,0 +1,5 @@
+Start with one black cell. Each new row looks at the row above: every cell checks itself and its two neighbours, and the number 30 written in binary (00011110) says what to do. The result is chaos - Rule 30 is random enough to generate random numbers.
+
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience

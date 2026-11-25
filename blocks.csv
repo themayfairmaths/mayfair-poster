@@ -1,1 +1,63 @@
 block,planned_date,block_name,post_order,queue_file,part_in_block
+2,2026-11-26,Square cylinder: Re ladder,1,087 VX-02.09 Re ladder part 5 Re 300.mp4,5 of 5
+2,2026-11-26,Square cylinder: Re ladder,2,082 VX-02.08 Re ladder part 4 Re 150.mp4,4 of 5
+2,2026-11-26,Square cylinder: Re ladder,3,077 VX-02.07 Re ladder part 3 Re 100.mp4,3 of 5
+2,2026-11-26,Square cylinder: Re ladder,4,071 VX-02.06 Re ladder part 2 Re 50.mp4,2 of 5
+2,2026-11-26,Square cylinder: Re ladder,5,058 VX-02.05 Re ladder part 1 Re 20.mp4,1 of 5
+3,2026-11-27,Waves part 1,1,070 WV-01.05 Single slit.mp4,5 of 5
+3,2026-11-27,Waves part 1,2,057 WV-01.04 Double slit.mp4,4 of 5
+3,2026-11-27,Waves part 1,3,040 WV-01.03 Noise cancelling.mp4,3 of 5
+3,2026-11-27,Waves part 1,4,023 WV-01.02 Two sources.mp4,2 of 5
+3,2026-11-27,Waves part 1,5,006 WV-01.01 One drop.mp4,1 of 5
+4,2026-11-28,Heat diffusion,1,072 HT-01.05 Heat around a hole.mp4,5 of 5
+4,2026-11-28,Heat diffusion,2,060 HT-01.04 Write with heat.mp4,4 of 5
+4,2026-11-28,Heat diffusion,3,043 HT-01.03 Insulated wall.mp4,3 of 5
+4,2026-11-28,Heat diffusion,4,026 HT-01.02 Heat sink fins.mp4,2 of 5
+4,2026-11-28,Heat diffusion,5,009 HT-01.01 Copper vs steel.mp4,1 of 5
+5,2026-11-29,Lorenz butterfly,1,059 LZ-01.04 1000 butterflies.mp4,4 of 4
+5,2026-11-29,Lorenz butterfly,2,042 LZ-01.03 Turn up rho.mp4,3 of 4
+5,2026-11-29,Lorenz butterfly,3,025 LZ-01.02 Butterfly effect.mp4,2 of 4
+5,2026-11-29,Lorenz butterfly,4,008 LZ-01.01 The butterfly.mp4,1 of 4
+6,2026-11-30,Triangle: Re ladder,1,088 VX-03.09 Re ladder part 5 Re 300.mp4,5 of 5
+6,2026-11-30,Triangle: Re ladder,2,083 VX-03.08 Re ladder part 4 Re 150.mp4,4 of 5
+6,2026-11-30,Triangle: Re ladder,3,078 VX-03.07 Re ladder part 3 Re 100.mp4,3 of 5
+6,2026-11-30,Triangle: Re ladder,4,073 VX-03.06 Re ladder part 2 Re 50.mp4,2 of 5
+6,2026-11-30,Triangle: Re ladder,5,062 VX-03.05 Re ladder part 1 Re 20.mp4,1 of 5
+7,2026-12-01,Reaction-diffusion extras A,1,095 RD-01.10 Self-healing.mp4,4 of 4
+7,2026-12-01,Reaction-diffusion extras A,2,090 RD-01.09 Live morph.mp4,3 of 4
+7,2026-12-01,Reaction-diffusion extras A,3,085 RD-01.08 Parameter map.mp4,2 of 4
+7,2026-12-01,Reaction-diffusion extras A,4,080 RD-01.07 Grow your name.mp4,1 of 4
+8,2026-12-02,Double pendulum,1,063 DP-01.04 60 pendulums.mp4,4 of 4
+8,2026-12-02,Double pendulum,2,046 DP-01.03 Swing size.mp4,3 of 4
+8,2026-12-02,Double pendulum,3,029 DP-01.02 Butterfly effect.mp4,2 of 4
+8,2026-12-02,Double pendulum,4,012 DP-01.01 Double pendulum chaos.mp4,1 of 4
+9,2026-12-03,Cylinder in the real world,1,094 VX-01.10 Pipe on the seabed.mp4,5 of 5
+9,2026-12-03,Cylinder in the real world,2,089 VX-01.09 Why thermowells snap.mp4,4 of 5
+9,2026-12-03,Cylinder in the real world,3,084 VX-01.08 Why wires sing.mp4,3 of 5
+9,2026-12-03,Cylinder in the real world,4,079 VX-01.07 Re is all that matters.mp4,2 of 5
+9,2026-12-03,Cylinder in the real world,5,074 VX-01.06 Perfect symmetry never sheds.mp4,1 of 5
+10,2026-12-04,Logistic map,1,067 LM-01.04 Butterfly effect.mp4,4 of 4
+10,2026-12-04,Logistic map,2,051 LM-01.03 Zoom into chaos.mp4,3 of 4
+10,2026-12-04,Logistic map,3,034 LM-01.02 Bifurcation diagram.mp4,2 of 4
+10,2026-12-04,Logistic map,4,017 LM-01.01 One equation four behaviours.mp4,1 of 4
+11,2026-12-05,Waves part 2,1,096 WV-01.10 Phased array.mp4,5 of 5
+11,2026-12-05,Waves part 2,2,091 WV-01.09 Satellite dish.mp4,4 of 5
+11,2026-12-05,Waves part 2,3,086 WV-01.08 Wave lens.mp4,3 of 5
+11,2026-12-05,Waves part 2,4,081 WV-01.07 Sonic boom.mp4,2 of 5
+11,2026-12-05,Waves part 2,5,076 WV-01.06 Doppler effect.mp4,1 of 5
+12,2026-12-06,Square: shape and angle,1,109 VX-02.14 Aspect ratio.mp4,5 of 5
+12,2026-12-06,Square: shape and angle,2,105 VX-02.13 Rounded corners.mp4,4 of 5
+12,2026-12-06,Square: shape and angle,3,041 VX-02.03 Spinning square.mp4,3 of 5
+12,2026-12-06,Square: shape and angle,4,024 VX-02.02 Square angle sweep.mp4,2 of 5
+12,2026-12-06,Square: shape and angle,5,007 VX-02.01 Square 0 vs 45 degrees.mp4,1 of 5
+13,2026-12-07,Mandelbrot and Julia,1,048 JS-01.03 Julia gallery.mp4,3 of 3
+13,2026-12-07,Mandelbrot and Julia,2,031 JS-01.02 Julia morph.mp4,2 of 3
+13,2026-12-07,Mandelbrot and Julia,3,014 JS-01.01 Mandelbrot zoom.mp4,1 of 3
+14,2026-12-08,Cellular automata,1,064 CA-01.04 Rule 110.mp4,4 of 4
+14,2026-12-08,Cellular automata,2,047 CA-01.03 All 256 rules.mp4,3 of 4
+14,2026-12-08,Cellular automata,3,030 CA-01.02 Four famous rules.mp4,2 of 4
+14,2026-12-08,Cellular automata,4,013 CA-01.01 Rule 30.mp4,1 of 4
+15,2026-12-09,Lid-driven cavity,1,066 CV-01.04 Same box faster lid.mp4,4 of 4
+15,2026-12-09,Lid-driven cavity,2,050 CV-01.03 Lid cavity Re 1000.mp4,3 of 4
+15,2026-12-09,Lid-driven cavity,3,033 CV-01.02 Lid cavity Re 400.mp4,2 of 4
+15,2026-12-09,Lid-driven cavity,4,016 CV-01.01 Lid cavity Re 100.mp4,1 of 4

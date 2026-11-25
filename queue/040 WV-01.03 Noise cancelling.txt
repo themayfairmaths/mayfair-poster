@@ -1,0 +1,5 @@
+Two sources in step are loud straight ahead. Flip one by 180° and every crest meets a trough on the centre line - silence. Noise-cancelling headphones play the opposite of the noise to do the same thing.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science #acoustics #audio

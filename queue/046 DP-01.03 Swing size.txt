@@ -1,0 +1,5 @@
+Same double pendulum, three starting angles. 10°: calm and regular, like a clock. 90°: getting wild. 170°: full chaos, flipping over the top.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #doublependulum #physics #maths #excel #engineering #science

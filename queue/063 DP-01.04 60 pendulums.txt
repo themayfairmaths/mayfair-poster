@@ -1,0 +1,5 @@
+60 double pendulums, each started 0.0000001 rad further over than the last. For a few seconds they move as one - then chaos fans them out like a firework.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #doublependulum #physics #maths #excel #engineering #science

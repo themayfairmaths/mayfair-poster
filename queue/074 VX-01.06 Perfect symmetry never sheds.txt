@@ -1,0 +1,5 @@
+A perfectly centred cylinder never sheds in a perfect simulation - nothing breaks the symmetry. Move it one cell and you get a full vortex street. In real life, tiny disturbances do the job.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

@@ -1,0 +1,5 @@
+Same box, even faster lid (Re 1000). A big round vortex and two counter-rotating corner eddies (red).
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics

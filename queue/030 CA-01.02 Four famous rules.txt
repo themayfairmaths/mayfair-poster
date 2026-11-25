@@ -1,0 +1,5 @@
+Same grid, same method, four rule numbers. 30: chaos. 90: a Sierpinski triangle fractal. 110: a pattern that can compute anything. 184: traffic flow - cars move right, jams drift left. One number from 0 to 255 decides everything.
+
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience

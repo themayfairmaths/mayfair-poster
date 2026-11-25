@@ -1,0 +1,5 @@
+A wave through a wide gap keeps going straight. Through a gap smaller than its wavelength it fans out in a half circle. That's why you can hear someone round a door (sound wavelength ~1 m) but can't see them (light ~0.5 µm).
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science

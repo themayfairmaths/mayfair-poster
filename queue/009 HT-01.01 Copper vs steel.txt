@@ -1,0 +1,5 @@
+The same blob of heat in a copper plate and a steel plate. Copper conducts about 8× better, so the heat races outwards; in steel it stays put and the hot spot stays hot. That's why good pans have copper bases.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#heattransfer #thermodynamics #engineering #excel #mechanicalengineering #physics #maths

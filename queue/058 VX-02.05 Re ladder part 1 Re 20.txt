@@ -1,0 +1,5 @@
+Re ladder, part 1 of 5: a square at Re 20. Viscosity wins - the wake just stretches out and nothing sheds.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

@@ -1,0 +1,5 @@
+Triangle Re ladder, part 2 of 5: Re 50. The wake starts to sway.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

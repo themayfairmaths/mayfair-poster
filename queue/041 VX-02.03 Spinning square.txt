@@ -1,0 +1,5 @@
+What happens to a vortex street when the square slowly turns? The wake follows the corners round, and a faster turn makes the street wobble as each corner comes past. Every 90° the square looks the same again.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

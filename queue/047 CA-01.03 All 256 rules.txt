@@ -1,0 +1,5 @@
+Every elementary cellular automaton there is - all 256 rules - in 12 seconds. Most are boring: blank, stripes, triangles. A few are magic. Pause on your favourite and comment its number.
+
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience

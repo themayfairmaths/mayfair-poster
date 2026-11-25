@@ -1,0 +1,5 @@
+Three simple equations, traced one tiny step at a time, draw this butterfly. The path flips between the two wings at random, never repeats and never escapes. Edward Lorenz found it in 1963 in a stripped-down weather model.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #maths #physics #excel #butterflyeffect #science

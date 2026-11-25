@@ -1,0 +1,5 @@
+Two populations at r = 3.9 that start one millionth apart. They agree for about 15 generations, then have nothing in common. Same equation, same rules - but a tiny measurement error wrecks the long-range forecast.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #logisticmap #maths #fractal #excel #bifurcation #science

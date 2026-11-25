@@ -1,0 +1,5 @@
+Eight wave makers in a line, nothing moves. Delay each one a little more than the last and the beam swings round: 0° delay straight ahead, 60° → 19.5°, 120° → 41.8°. This is how 5G masts and modern radars steer their beams.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science #radar #5g #electricalengineering

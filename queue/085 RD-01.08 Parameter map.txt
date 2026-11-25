@@ -1,0 +1,5 @@
+Every pattern in one picture: the feed rate F changes left to right and the kill rate k changes bottom to top. Spots, stripes and nothing at all, side by side.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

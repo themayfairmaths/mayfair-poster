@@ -1,0 +1,5 @@
+A pipe near the seabed: as the gap to the ground shrinks, the ground squashes the lower vortices and the shedding turns weak and one-sided. Subsea pipeline engineers care about exactly this.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #subsea #pipeline #oilandgas

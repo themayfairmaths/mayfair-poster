@@ -1,0 +1,5 @@
+A thermowell is a little tube that sticks into a pipe to hold a temperature sensor. Flow past it sheds vortices, and each one gives it a sideways push. Speed the flow up and the shedding frequency climbs - when it reaches the thermowell's own natural frequency it locks in and shakes itself to fatigue failure. A broken thermowell caused the 1995 sodium leak at Japan's Monju reactor. (The flow is simulated; the natural frequency line is illustrative.)
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #processengineering #instrumentation

@@ -1,0 +1,5 @@
+One drop in a ripple tank, two endings. With a sponge round the edge the ring spreads out and fades. In a box with hard walls every reflection comes back and criss-crosses into patterns. Same wave equation - only the edges changed.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science

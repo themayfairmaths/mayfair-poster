@@ -1,0 +1,5 @@
+A flat wall bounces a wave straight back. A parabolic dish sends every reflection to one point - the focus. That's where the receiver goes on a satellite dish or radio telescope.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science #antenna #radio

@@ -1,0 +1,5 @@
+Rule 110 from a single cell, then from a random row. Watch the travelling structures - 'gliders' - crash and interact. In 2004 Matthew Cook proved Rule 110 is Turing complete: in principle it can run any computer program.
+
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience

@@ -1,0 +1,5 @@
+Two double pendulums, started one billionth of a radian apart. For about 11 seconds you can't tell them apart - then they split and do completely different things. Tiny differences grow exponentially: that's chaos.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #doublependulum #physics #maths #excel #engineering #science

@@ -1,0 +1,5 @@
+Stretch a square along the flow: plate, square, block, bridge deck. The longer the body, the slower and bigger the vortices off the tail.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #civilengineering #bridges

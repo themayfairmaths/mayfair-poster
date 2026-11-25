@@ -1,0 +1,5 @@
+Same box. Faster lid. The classic CFD benchmark - and this 96 × 96 grid matches the published numbers (Ghia 1982): vortex strength 0.104 / 0.114 / 0.123 vs 0.103 / 0.114 / 0.118.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics

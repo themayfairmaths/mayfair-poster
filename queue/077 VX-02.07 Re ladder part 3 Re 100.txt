@@ -1,0 +1,5 @@
+Re ladder, part 3 of 5: Re 100. A clean von Kármán vortex street.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

@@ -1,0 +1,5 @@
+Wipe out the middle of the pattern and watch it grow back. Reaction-diffusion patterns heal themselves.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

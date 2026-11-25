@@ -1,0 +1,5 @@
+Write a word in heat and let the heat equation do the rest. With insulated edges it evens out to one temperature; with cold edges it drains away. Diffusion always smooths things out.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#heattransfer #thermodynamics #engineering #excel #mechanicalengineering #physics #maths

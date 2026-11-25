@@ -1,0 +1,5 @@
+Hot on the left, cold on the right. A plain plate gives straight, evenly spaced isotherms. Cut a hole and the heat has to squeeze round it - the isotherms bend and crowd above and below. Same reason holes and cracks concentrate stress.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#heattransfer #thermodynamics #engineering #excel #mechanicalengineering #physics #maths

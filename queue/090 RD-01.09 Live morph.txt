@@ -1,0 +1,5 @@
+Turning up the feed rate while it runs: the spots stretch, join up and turn into worms.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

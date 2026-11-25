@@ -1,0 +1,5 @@
+Two starting points one billionth apart. For about 30 time units they trace the same path - then they split and go completely different ways. That's the butterfly effect, and why weather forecasts fail after about 10 days.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #maths #physics #excel #butterflyeffect #science

@@ -1,0 +1,5 @@
+x_next = r·x·(1 − x): a population that grows but gets crowded. r = 2.8 settles to one value, 3.2 flip-flops between two, 3.5 cycles through four, 3.9 never settles. The red line bounces between the curve and the diagonal - a cobweb plot.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #logisticmap #maths #fractal #excel #bifurcation #science

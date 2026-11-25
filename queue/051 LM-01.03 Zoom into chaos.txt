@@ -1,0 +1,5 @@
+Zoom 150× into the chaotic part of the bifurcation diagram, near r = 3.85, and the whole diagram appears again in miniature: period doubling, then chaos. It's a fractal - and the splits shrink by Feigenbaum's constant, 4.669, every time.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#chaos #logisticmap #maths #fractal #excel #bifurcation #science

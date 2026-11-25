@@ -1,0 +1,5 @@
+Waves travel slower inside the lens (70% speed). The thick middle holds the wave back the most, so the crests bend round and meet at a focus - exactly how a glass lens focuses light.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #engineering #excel #wavequation #science #optics

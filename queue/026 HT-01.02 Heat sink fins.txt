@@ -1,0 +1,5 @@
+A heater in the base of a plate, cooled by the air. Flat plate: 100 °C. Add fins and the heater drops to 85 °C with four and 71 °C with eight - more surface for the air to carry heat away. Lines are isotherms every 10 °C.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#heattransfer #thermodynamics #engineering #excel #mechanicalengineering #physics #maths #electronicscooling #heatsink
