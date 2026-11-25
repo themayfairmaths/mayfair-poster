@@ -1,0 +1,5 @@
+Why sharp corners change the whole wake. Same solver, same Re, but a square sheds about 20% more slowly than a circle and barely changes with Re, because its corners pin where the flow lets go. Plus: rounding the corners, when shedding starts, why squares suit a grid, and why engineers worry about lock-in.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexshedding #strouhal #windengineering #math #maths #engineering #python #stem
