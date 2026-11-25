@@ -2,12 +2,17 @@
 Runs on GitHub Actions. Secrets: IG_TOKEN (system-user token), IG_USER_ID (Instagram account ID).
 Usage: python post.py check   -> verify token, account and publishing limit (posts nothing)
        python post.py post    -> post the next block (all its parts, last part first)
-       python post.py test FILE.mp4 -> post one specific queue file (for a first test)"""
+       python post.py test FILE.mp4 -> post one specific queue file (for a first test)
+       python post.py carousel [FOLDER] -> post the next carousel that is due (or one named folder)
+Carousels: carousels.csv (after_block,folder,carousel_name) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
+A carousel is due once every reel in its after_block was posted on an EARLIER day (Perth time), so it goes out at
+midday the day after its reels. One carousel per run. Needs a public repo (Instagram fetches the JPEGs by URL)."""
 import csv, os, sys, time, json, datetime, urllib.request, urllib.parse, urllib.error
 
 VER = os.environ.get('GRAPH_VERSION', 'v25.0'); G = f'https://graph.facebook.com/{VER}'
 TOKEN = os.environ.get('IG_TOKEN', '').strip(); IGID = os.environ.get('IG_USER_ID', '').strip()
 COVER_BASE = os.environ.get('COVER_BASE_URL', '').strip()      # e.g. https://raw.githubusercontent.com/<you>/<repo>/main/covers/  (public repo only)
+CAR_BASE = os.environ.get('CAROUSEL_BASE_URL', '').strip() or COVER_BASE.replace('/covers/', '/carousels/')
 LOG = 'posted.csv'; PERTH = datetime.timezone(datetime.timedelta(hours=8))
 
 def req(method, url, params=None, data=None, headers=None):
@@ -22,10 +27,35 @@ def req(method, url, params=None, data=None, headers=None):
     except urllib.error.HTTPError as e:
         msg = e.read().decode(errors='replace'); raise RuntimeError(f'{method} {url.split("?")[0]} -> {e.code}: {msg}')
 
+BUSINESS_ID = os.environ.get('BUSINESS_ID', '2181762142082848')   # Meta business portfolio "Adam Lichtman" (not a secret)
+
+def discover():
+    """Print every Instagram account this token can see, with its ID (for the IG_USER_ID secret). Never fails."""
+    found = {}
+    tries = [('Pages this token can manage', f'{G}/me/accounts', {'fields': 'name,instagram_business_account{id,username}'}),
+             ('Business portfolio: Instagram business accounts', f'{G}/{BUSINESS_ID}/instagram_business_accounts', {'fields': 'id,username'}),
+             ('Business portfolio: owned Instagram accounts', f'{G}/{BUSINESS_ID}/owned_instagram_accounts', {'fields': 'id,username'}),
+             ('Business portfolio: owned Pages', f'{G}/{BUSINESS_ID}/owned_pages', {'fields': 'name,instagram_business_account{id,username}'})]
+    for label, url, p in tries:
+        try:
+            data = req('GET', url, p).get('data', [])
+            print(f'- {label}: {len(data)} found')
+            for d in data:
+                ig = d.get('instagram_business_account') or (d if 'username' in d else None)
+                if ig: found[ig['id']] = ig.get('username', '?'); print(f"    @{ig.get('username', '?')}  ID = {ig['id']}" + (f"  (via Page '{d['name']}')" if 'name' in d else ''))
+                elif 'name' in d: print(f"    Page '{d['name']}' has no Instagram account linked")
+        except Exception as e:
+            print(f'- {label}: not available ({str(e)[:160]})')
+    if found:
+        print('\n>>> Copy the ID next to @themayfairmaths into a new repository secret called IG_USER_ID, then run check again.')
+    else:
+        print('\n>>> No Instagram account visible to this token. Send Claude this log (it contains no secrets).')
+
 def check():
     assert TOKEN, 'IG_TOKEN secret is missing'
     me = req('GET', f'{G}/me', {'fields': 'id,name'}); print('Token OK, belongs to:', me)
-    assert IGID, 'IG_USER_ID secret is missing (see README)'
+    if not IGID:
+        print('IG_USER_ID secret is missing - looking for your Instagram account ID instead:'); discover(); sys.exit(1)
     acc = req('GET', f'{G}/{IGID}', {'fields': 'id,username,media_count'}); print('Instagram account:', acc)
     lim = req('GET', f'{G}/{IGID}/content_publishing_limit', {'fields': 'quota_usage,config'}); print('Publishing limit:', lim)
     print('All good - ready to post.')
@@ -52,9 +82,49 @@ def post_one(mp4):
     with open(LOG, 'a', newline='') as fh: csv.writer(fh).writerow([datetime.datetime.now(PERTH).strftime('%Y-%m-%d %H:%M'), mp4, link, 'posted'])
     print('Posted', mp4, link); return link
 
-def posted():
-    if not os.path.exists(LOG): return set()
-    return {r[1] for r in csv.reader(open(LOG)) if len(r) > 3 and r[3] == 'posted'}
+def posted(with_dates=False):
+    if not os.path.exists(LOG): return {} if with_dates else set()
+    rows = [r for r in csv.reader(open(LOG)) if len(r) > 3 and r[3] == 'posted']
+    return {r[1]: r[0][:10] for r in rows} if with_dates else {r[1] for r in rows}
+
+def wait_ready(cid, what):
+    for _ in range(60):
+        st = req('GET', f'{G}/{cid}', {'fields': 'status_code,status'})
+        if st.get('status_code') in ('FINISHED', None): return
+        if st.get('status_code') in ('ERROR', 'EXPIRED'): raise RuntimeError(f'Processing failed for {what}: {st}')
+        time.sleep(5)
+    raise RuntimeError(f'Timed out waiting for {what}')
+
+def post_carousel(folder):
+    """Instagram carousel from carousels/<folder>/slide*.jpg (JPEG only, 2-10 slides) + caption.txt."""
+    assert CAR_BASE, 'Set COVER_BASE_URL (or CAROUSEL_BASE_URL) - Instagram fetches carousel images by public URL'
+    d = os.path.join('carousels', folder)
+    slides = sorted(f for f in os.listdir(d) if f.lower().startswith('slide') and f.lower().endswith(('.jpg', '.jpeg')))
+    if not 2 <= len(slides) <= 10: raise RuntimeError(f'{folder}: need 2-10 JPEG slides, found {len(slides)}')
+    cap = os.path.join(d, 'caption.txt'); caption = open(cap, encoding='utf-8').read().strip() if os.path.exists(cap) else ''
+    kids = []
+    for f in slides:
+        url = CAR_BASE + urllib.parse.quote(folder) + '/' + urllib.parse.quote(f)
+        c = req('POST', f'{G}/{IGID}/media', {'image_url': url, 'is_carousel_item': 'true'}); wait_ready(c['id'], f); kids.append(c['id'])
+    c = req('POST', f'{G}/{IGID}/media', {'media_type': 'CAROUSEL', 'children': ','.join(kids), 'caption': caption}); wait_ready(c['id'], folder)
+    mid = req('POST', f'{G}/{IGID}/media_publish', {'creation_id': c['id']})['id']
+    link = req('GET', f'{G}/{mid}', {'fields': 'permalink'}).get('permalink', '')
+    with open(LOG, 'a', newline='') as fh: csv.writer(fh).writerow([datetime.datetime.now(PERTH).strftime('%Y-%m-%d %H:%M'), 'carousel:' + folder, link, 'posted'])
+    print('Posted carousel', folder, link); return link
+
+def post_next_carousel():
+    if not os.path.exists('carousels.csv'): print('No carousels.csv - nothing to do.'); return
+    done = posted(with_dates=True); today = datetime.datetime.now(PERTH).strftime('%Y-%m-%d')
+    blocks = {}
+    if os.path.exists('blocks.csv'):
+        for r in csv.DictReader(open('blocks.csv')): blocks.setdefault(int(r['block']), []).append(r['queue_file'])
+    for r in sorted(csv.DictReader(open('carousels.csv')), key=lambda r: int(r['after_block'])):
+        if 'carousel:' + r['folder'] in done: continue
+        files = blocks.get(int(r['after_block']), [])
+        if not files or any(f not in done for f in files): print(f"Next carousel '{r['carousel_name']}' waits for block {r['after_block']}."); return
+        if max(done[f] for f in files) >= today: print(f"Block {r['after_block']} went out today - '{r['carousel_name']}' goes tomorrow at midday."); return
+        post_carousel(r['folder']); return
+    print('No carousels waiting.')
 
 def post_next_block():
     rows = list(csv.DictReader(open('blocks.csv'))); done = posted()
@@ -75,3 +145,7 @@ if __name__ == '__main__':
     if mode == 'check': check()
     elif mode == 'post': check(); post_next_block()
     elif mode == 'test': check(); post_one(sys.argv[2])
+    elif mode == 'carousel':
+        check()
+        if len(sys.argv) > 2 and sys.argv[2].strip(): post_carousel(sys.argv[2].strip())
+        else: post_next_carousel()
