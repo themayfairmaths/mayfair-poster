@@ -1,0 +1,37 @@
+name: Post to Instagram
+on:
+  schedule:
+    - cron: '41 23 * * *'        # 07:41 Perth time every day
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check = test the setup only, post = post the next block, test = post one file'
+        default: 'check'
+        type: choice
+        options: [check, post, test]
+      file:
+        description: 'For test mode: the queue file name, e.g. 186 PP-01.01 What is an ODE_rev20261124_a.mp4'
+        required: false
+concurrency: instagram-post
+permissions:
+  contents: write
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          COVER_BASE_URL: ${{ vars.COVER_BASE_URL }}
+        run: |
+          MODE="${{ github.event.inputs.mode || 'post' }}"
+          if [ "$MODE" = "test" ]; then python post.py test "${{ github.event.inputs.file }}"; else python post.py "$MODE"; fi
+      - name: Save the post log
+        if: always()
+        run: |
+          git config user.name "mayfair-poster"; git config user.email "actions@users.noreply.github.com"
+          git add posted.csv 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Post log $(date -u +%F)" && git push)
