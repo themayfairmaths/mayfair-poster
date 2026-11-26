@@ -6,6 +6,7 @@ Usage: python post.py check   -> verify token, account and publishing limit (pos
        python post.py carousel [FOLDER] -> post the next carousel that is due (or one named folder)
        python post.py audio   -> list Instagram's trending music (posts nothing), saved to audio_trending.json
 Trending music on reels: set the repository variable USE_IG_AUDIO = 1 (falls back to the video's own music if Instagram refuses).
+Filters skip Christmas/holiday, religious and slow tracks by keyword; add any title, artist or audio_id to music_veto.txt (one per line) to never use it.
 Carousels: carousels.csv (after_block,folder,carousel_name[,post_date YYYY-MM-DD]) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
 A carousel with a post_date is due from midday on that date. Otherwise it is due once every reel in its after_block was posted on an EARLIER day (Perth time), so it goes out at
 midday the day after its reels. One carousel per run. Needs a public repo (Instagram fetches the JPEGs by URL)."""
@@ -68,17 +69,37 @@ def trending_audio(query=None):
     p = {'audio_type': 'music', 'user_id': IGID}
     if query: p['search_query'] = query
     return req('GET', f'{G}/ig_audio', p).get('audio', [])
-def pick_audio():
-    """first trending track not used in the last 30 posts (so every reel gets different music)."""
+BLOCK = ['christmas', 'xmas', 'santa', 'jingle', 'carol', 'holiday', 'noel', 'navidad', 'feliz', 'snow', 'wonderful time', 'mistletoe', 'sleigh', 'reindeer',
+         'gurbani', 'shabad', 'nanak', 'gurpurab', 'waheguru', 'kirtan', 'bhajan', 'aarti', 'mantra', 'worship', 'hymn', 'gospel', 'praise', 'psalm', 'prayer',
+         'jesus', 'lord', 'allah', 'quran', 'naat', 'nasheed', 'devotional', 'krishna', 'shiva', 'ganesh', 'hallelujah', 'amen',
+         'slowed', 'reverb', 'sad', 'lullaby', 'sleep', 'ballad', 'acoustic', 'piano version', 'funeral', 'cry']
+def skip_reason(a, used, veto):
+    t = f"{a.get('title', '')} {a.get('display_artist', '')}".lower()
+    if not a.get('audio_id'): return 'no id'
+    if a['audio_id'] in used: return 'used recently'
+    if a['audio_id'] in veto or any(v and v in t for v in veto): return 'on music_veto.txt'
+    w = next((w for w in BLOCK if w in t), None)
+    if w: return f'filtered ({w})'
+    if (a.get('duration_in_ms') or 99999) < 20000: return 'too short'
+    return ''
+def pick_audio(items=None):
+    """first trending track that passes the filters and wasn't used in the last 30 posts (every reel gets different music)."""
     used = set()
     if os.path.exists(LOG):
         rows = [r for r in csv.reader(open(LOG)) if len(r) > 4]; used = {r[4] for r in rows[-30:]}
-    for a in trending_audio():
-        if a.get('audio_id') and a['audio_id'] not in used: return a
+    veto = {l.strip().lower() for l in open('music_veto.txt', encoding='utf-8')} - {''} if os.path.exists('music_veto.txt') else set()
+    veto = {v for v in veto if not v.startswith('#')}
+    for a in (trending_audio() if items is None else items):
+        if not skip_reason(a, used, veto): return a
     return None
 def audio_report():
     """mode 'audio': list today's trending music (posts nothing) and save it to audio_trending.json for checking."""
-    try: items = trending_audio(); out = {'ok': True, 'count': len(items), 'tracks': [{k: a.get(k) for k in ('audio_id', 'title', 'display_artist', 'duration_in_ms')} for a in items]}
+    try:
+        items = trending_audio(); veto = set(); used = set()
+        if os.path.exists('music_veto.txt'): veto = {l.strip().lower() for l in open('music_veto.txt', encoding='utf-8') if l.strip() and not l.startswith('#')}
+        pick = pick_audio(items)
+        out = {'ok': True, 'count': len(items), 'next_pick': pick and f"{pick.get('title')} - {pick.get('display_artist')}",
+               'tracks': [dict({k: a.get(k) for k in ('audio_id', 'title', 'display_artist', 'duration_in_ms')}, skip=skip_reason(a, used, veto) or 'ok') for a in items]}
     except Exception as e: out = {'ok': False, 'error': str(e)[:600]}
     json.dump(out, open('audio_trending.json', 'w'), indent=1, ensure_ascii=False); print(json.dumps(out, indent=1, ensure_ascii=False)[:3000])
 
