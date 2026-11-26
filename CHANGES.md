@@ -1,5 +1,8 @@
 # Changes
 
+## 2026-11-26 (rev20261126_b)
+- Instagram trending music (Instagram Audio API). New mode `audio` lists today's trending music and saves it to audio_trending.json without posting. With the repository variable USE_IG_AUDIO = 1, every reel gets the first trending track not used in the last 30 posts (audio_volume 100, the video's own music muted). If Instagram refuses (for example because no Facebook Page is linked), the reel posts with its own music, so posting never breaks. The track used is logged in posted.csv (columns 5-6).
+
 ## 2026-11-26 (rev20261126_a)
 - The 12:30 carousel run now posts EVERY dated carousel that is due (post_date on or before today), a minute apart, instead of only one. Normally that is one a day; on 26 Nov it posts two (VX-01 and the RD-02 catch-up), and a missed day catches up automatically. Undated carousels are still one per run.
 

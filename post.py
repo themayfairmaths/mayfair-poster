@@ -4,6 +4,8 @@ Usage: python post.py check   -> verify token, account and publishing limit (pos
        python post.py post    -> post ONE reel: the next part of today's block (hourly 08:00-15:00 Perth, one block per day)
        python post.py test FILE.mp4 -> post one specific queue file (for a first test)
        python post.py carousel [FOLDER] -> post the next carousel that is due (or one named folder)
+       python post.py audio   -> list Instagram's trending music (posts nothing), saved to audio_trending.json
+Trending music on reels: set the repository variable USE_IG_AUDIO = 1 (falls back to the video's own music if Instagram refuses).
 Carousels: carousels.csv (after_block,folder,carousel_name[,post_date YYYY-MM-DD]) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
 A carousel with a post_date is due from midday on that date. Otherwise it is due once every reel in its after_block was posted on an EARLIER day (Perth time), so it goes out at
 midday the day after its reels. One carousel per run. Needs a public repo (Instagram fetches the JPEGs by URL)."""
@@ -61,6 +63,25 @@ def check():
     lim = req('GET', f'{G}/{IGID}/content_publishing_limit', {'fields': 'quota_usage,config'}); print('Publishing limit:', lim)
     print('All good - ready to post.')
 
+USE_IG_AUDIO = os.environ.get('USE_IG_AUDIO', '').strip() == '1'      # repo variable: 1 = put Instagram trending music on reels
+def trending_audio(query=None):
+    p = {'audio_type': 'music', 'user_id': IGID}
+    if query: p['search_query'] = query
+    return req('GET', f'{G}/ig_audio', p).get('audio', [])
+def pick_audio():
+    """first trending track not used in the last 30 posts (so every reel gets different music)."""
+    used = set()
+    if os.path.exists(LOG):
+        rows = [r for r in csv.reader(open(LOG)) if len(r) > 4]; used = {r[4] for r in rows[-30:]}
+    for a in trending_audio():
+        if a.get('audio_id') and a['audio_id'] not in used: return a
+    return None
+def audio_report():
+    """mode 'audio': list today's trending music (posts nothing) and save it to audio_trending.json for checking."""
+    try: items = trending_audio(); out = {'ok': True, 'count': len(items), 'tracks': [{k: a.get(k) for k in ('audio_id', 'title', 'display_artist', 'duration_in_ms')} for a in items]}
+    except Exception as e: out = {'ok': False, 'error': str(e)[:600]}
+    json.dump(out, open('audio_trending.json', 'w'), indent=1, ensure_ascii=False); print(json.dumps(out, indent=1, ensure_ascii=False)[:3000])
+
 def caption_for(mp4):
     t = os.path.join('queue', mp4[:-4] + '.txt'); return open(t, encoding='utf-8').read().strip() if os.path.exists(t) else ''
 
@@ -69,7 +90,18 @@ def post_one(mp4):
     p = {'media_type': 'REELS', 'upload_type': 'resumable', 'caption': caption_for(mp4), 'share_to_feed': 'true'}
     cover = mp4[:-4] + ' cover.png'
     if COVER_BASE and os.path.exists(os.path.join('covers', cover)): p['cover_url'] = COVER_BASE + urllib.parse.quote(cover)
-    c = req('POST', f'{G}/{IGID}/media', p); cid = c['id']; uri = c.get('uri') or f'https://rupload.facebook.com/ig-api-upload/{VER}/{cid}'
+    track = None
+    if USE_IG_AUDIO:
+        try:
+            track = pick_audio()
+            if track: p['audio_configuration'] = json.dumps({'audio_id': track['audio_id'], 'audio_volume': 100, 'video_volume': 0})
+        except Exception as e: print('Trending audio unavailable, using the video\'s own music:', str(e)[:300]); track = None
+    try: c = req('POST', f'{G}/{IGID}/media', p)
+    except RuntimeError as e:
+        if 'audio_configuration' not in p: raise
+        print('Instagram refused the trending track, posting with the video\'s own music:', str(e)[:300]); p.pop('audio_configuration'); track = None
+        c = req('POST', f'{G}/{IGID}/media', p)
+    cid = c['id']; uri = c.get('uri') or f'https://rupload.facebook.com/ig-api-upload/{VER}/{cid}'
     with open(path, 'rb') as f:
         req('POST', uri, data=f.read(), headers={'Authorization': f'OAuth {TOKEN}', 'offset': '0', 'file_size': str(size), 'Content-Type': 'application/octet-stream'})
     for _ in range(60):                                             # wait up to ~10 min for processing
@@ -80,8 +112,9 @@ def post_one(mp4):
     else: raise RuntimeError(f'Timed out waiting for {mp4}')
     pub = req('POST', f'{G}/{IGID}/media_publish', {'creation_id': cid}); mid = pub['id']
     link = req('GET', f'{G}/{mid}', {'fields': 'permalink'}).get('permalink', '')
-    with open(LOG, 'a', newline='') as fh: csv.writer(fh).writerow([datetime.datetime.now(PERTH).strftime('%Y-%m-%d %H:%M'), mp4, link, 'posted'])
-    print('Posted', mp4, link); return link
+    row = [datetime.datetime.now(PERTH).strftime('%Y-%m-%d %H:%M'), mp4, link, 'posted'] + ([track['audio_id'], f"{track.get('title', '')} - {track.get('display_artist', '')}"] if track else [])
+    with open(LOG, 'a', newline='') as fh: csv.writer(fh).writerow(row)
+    print('Posted', mp4, link, '| music:', (track.get('title'), track.get('display_artist')) if track else "the video's own"); return link
 
 def posted(with_dates=False):
     if not os.path.exists(LOG): return {} if with_dates else set()
@@ -167,6 +200,7 @@ if __name__ == '__main__':
     if mode == 'check': check()
     elif mode == 'post': check(); post_next_reel()
     elif mode == 'test': check(); post_one(sys.argv[2])
+    elif mode == 'audio': check(); audio_report()
     elif mode == 'carousel':
         check()
         if len(sys.argv) > 2 and sys.argv[2].strip(): post_carousel(sys.argv[2].strip())
