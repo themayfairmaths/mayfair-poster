@@ -1,5 +1,0 @@
-One drop or three, sponge edges or hard walls - and it's all in the boundary condition. Sponge edges add damping g that grows with depth: u_next = [2u − (1−g)u_old + C²∇²u]/(1+g), so the ring fades with no echo. Hard walls hold u = 0: the wall can't move, so every crest comes back as a trough and the energy stays trapped. With three drops, the sponge still swallows every ring, while the walled box fills with criss-crossing echoes. Same wave equation - only the edges changed.
-
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
-
-#waves #physics #maths #engineering #excel #wavequation #science #boundaryconditions

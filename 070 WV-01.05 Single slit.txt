@@ -1,7 +1,0 @@
-Squeeze a wave through a gap. No wall: straight crests. A gap 3× the wavelength: a beam. About one wavelength: it starts to spread. Narrower than the wavelength: a half circle. The maths at the wall is just u = 0, and every open cell re-radiates (Huygens). That's why you can hear someone round a door (sound λ ≈ 1 m) but can't see them (light λ ≈ 0.5 µm).
-
-Send this to someone who still thinks sound travels in straight lines.
-
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
-
-#waves #physics #maths #engineering #excel #wavequation #science #diffraction

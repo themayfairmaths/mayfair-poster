@@ -1,4 +1,6 @@
-Two sources in step are loud straight ahead. Flip one by 180° and every crest meets a trough on the centre line - silence. Noise-cancelling headphones play the opposite of the noise to do the same thing.
+How noise-cancelling works, measured. Three probe points sit in the water and plot their height live. With both sources in step, A and C are loud and B is quiet. Flip source 2 by 180° (sin(θ + 180°) = −sin θ): A goes silent and B gets loud, but C, off to the side, barely changes. Cancelling only works in certain spots. On the centre line the two paths are equal, so the sum is exactly zero. That's why headphones do it right at your ear.
+
+Which point would you put your ear at?
 
 Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
 

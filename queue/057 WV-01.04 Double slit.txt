@@ -1,5 +1,5 @@
-The double-slit experiment in a ripple tank. A plane wave hits a wall with two slits and the two new waves interfere into fringes. Double the gap and the fringes get twice as tight - the same pattern Thomas Young saw with light in 1801.
+The double-slit experiment in a ripple tank. The wall is u = 0 except in the slits, so each slit becomes a new source and the two ripples interfere: bright where the paths differ by 0, λ, 2λ… Double the gap and the fringes get twice as tight. Add a third slit and the bright beams get sharper - the start of a diffraction grating. Make the middle slit bigger and it wins: the centre beam takes over and the calm fringes no longer reach zero. Thomas Young saw the same pattern with light in 1801.
 
 Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
 
-#waves #physics #maths #engineering #excel #wavequation #science #quantumphysics #light
+#waves #physics #maths #engineering #excel #wavequation #science #doubleslit #light

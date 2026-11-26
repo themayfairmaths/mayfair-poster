@@ -1,5 +1,0 @@
-Why do two chemicals make spots and mazes at all? The deep dive behind yesterday's reaction-diffusion reels: the reaction U + 2V → 3V, a map of every pattern the two dials F and k can make (63 real runs), Turing's trick (the food spreads twice as fast as the eater), what changes at the edges (wrap-around vs closed walls), why Δt = 1 stays stable, spots that divide like cells, and where it turns up in nature.
-
-Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
-
-#reactiondiffusion #turingpatterns #grayscott #math #maths #patterns #naturemath #python #visualmath #stem

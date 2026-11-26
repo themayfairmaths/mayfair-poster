@@ -1,5 +1,0 @@
-Two wave makers - does the gap matter? It's the gap measured in wavelengths, d/λ, that counts. Calm lines sit wherever the two paths differ by ½λ, 1½λ, 2½λ… Under half a wavelength apart (d/λ = 0.4) that never happens: no calm lines, it acts like one source. At d/λ = 1.2 you get 2 calm lines; at 3.2 you get 6. Rule of thumb: calm lines = 2 × (d/λ rounded). Halving the wavelength does the same as doubling the gap.
-
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
-
-#waves #physics #maths #engineering #excel #wavequation #science #interference
