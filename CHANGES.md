@@ -1,5 +1,15 @@
 # Changes
 
+## 2026-11-26 (rev20261126)
+- Reels are now spread across the day: the workflow runs hourly from 08:00 to 15:00 Perth and each run posts ONE reel (`post_next_reel`), so a 5-part block goes out 08:00, 09:00, 10:00, 11:00, 12:00. Spreading the parts stops them competing with each other for the same followers.
+- A new block only starts if no block has started that day, so it's still one block per day. If a part is left over (a dropped GitHub run), it goes first the next morning and that day's block follows an hour later.
+- Never two reels less than 45 minutes apart (`MIN_GAP_MINUTES`), in case a late GitHub run lands next to the following one. The runs at 13:00-15:00 are spares for this.
+- Carousel moved from 12:00 to 12:30 so it doesn't land on top of a reel.
+- The old "post the whole block at once" behaviour is gone; manual `post` runs also post one reel.
+
+## 2026-11-26 (rev20261126)
+- `post` now skips if any reel was already posted today (Perth time). GitHub's 08:00 scheduled run was late on its first day, so the block was started by hand; this stops a late scheduled run from posting a second block the same day.
+
 ## 2026-11-25 (rev20261125_c)
 - carousels.csv can now have a `post_date` column (YYYY-MM-DD). A dated carousel posts at the 12:00 run on or after that date, without waiting for its block to be posted from GitHub. Lets carousels go out from GitHub while the reels are still posted from the Mac.
 
