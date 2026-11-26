@@ -119,17 +119,18 @@ def post_next_carousel():
     blocks = {}
     if os.path.exists('blocks.csv'):
         for r in csv.DictReader(open('blocks.csv')): blocks.setdefault(int(r['block']), []).append(r['queue_file'])
-    rows = list(csv.DictReader(open('carousels.csv')))
+    rows = list(csv.DictReader(open('carousels.csv'))); posted_now = 0
     for r in sorted(rows, key=lambda r: (r.get('post_date') or '9999', int(r.get('after_block') or 0))):
         if 'carousel:' + r['folder'] in done: continue
-        if (r.get('post_date') or '').strip():                 # dated carousel: due from 12:00 on that Perth date
+        if (r.get('post_date') or '').strip():                 # dated carousel: due from 12:30 on that Perth date
             if r['post_date'].strip() > today: print(f"Next carousel '{r['carousel_name']}' is planned for {r['post_date']}."); return
-            post_carousel(r['folder']); return
+            post_carousel(r['folder']); posted_now += 1; time.sleep(60); continue   # every dated carousel that is due goes out, a minute apart
+        if posted_now: return                                   # undated carousels: still one per run
         files = blocks.get(int(r['after_block']), [])
         if not files or any(f not in done for f in files): print(f"Next carousel '{r['carousel_name']}' waits for block {r['after_block']}."); return
         if max(done[f] for f in files) >= today: print(f"Block {r['after_block']} went out today - '{r['carousel_name']}' goes tomorrow at midday."); return
         post_carousel(r['folder']); return
-    print('No carousels waiting.')
+    if not posted_now: print('No carousels waiting.')
 
 GAP_MIN = int(os.environ.get('MIN_GAP_MINUTES', '45'))           # never two reels closer than this
 

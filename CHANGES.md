@@ -1,5 +1,8 @@
 # Changes
 
+## 2026-11-26 (rev20261126_a)
+- The 12:30 carousel run now posts EVERY dated carousel that is due (post_date on or before today), a minute apart, instead of only one. Normally that is one a day; on 26 Nov it posts two (VX-01 and the RD-02 catch-up), and a missed day catches up automatically. Undated carousels are still one per run.
+
 ## 2026-11-26 (rev20261126)
 - Reels are now spread across the day: the workflow runs hourly from 08:00 to 15:00 Perth and each run posts ONE reel (`post_next_reel`), so a 5-part block goes out 08:00, 09:00, 10:00, 11:00, 12:00. Spreading the parts stops them competing with each other for the same followers.
 - A new block only starts if no block has started that day, so it's still one block per day. If a part is left over (a dropped GitHub run), it goes first the next morning and that day's block follows an hour later.
