@@ -1,0 +1,5 @@
+# One per line: a song title, an artist, or an audio_id. Matching tracks are never used on reels.
+# Slow / moody artists (added by Claude 26 Nov 2026 from the trending list)
+lana del rey
+noah kahan
+myuu
