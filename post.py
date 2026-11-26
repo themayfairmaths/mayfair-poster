@@ -1,7 +1,7 @@
 """Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
 Runs on GitHub Actions. Secrets: IG_TOKEN (system-user token), IG_USER_ID (Instagram account ID).
 Usage: python post.py check   -> verify token, account and publishing limit (posts nothing)
-       python post.py post    -> post the next block (all its parts, last part first)
+       python post.py post    -> post ONE reel: the next part of today's block (hourly 08:00-15:00 Perth, one block per day)
        python post.py test FILE.mp4 -> post one specific queue file (for a first test)
        python post.py carousel [FOLDER] -> post the next carousel that is due (or one named folder)
 Carousels: carousels.csv (after_block,folder,carousel_name[,post_date YYYY-MM-DD]) + carousels/<folder>/slide01.jpg ... slide10.jpg + caption.txt.
@@ -131,24 +131,40 @@ def post_next_carousel():
         post_carousel(r['folder']); return
     print('No carousels waiting.')
 
-def post_next_block():
-    rows = list(csv.DictReader(open('blocks.csv'))); done = posted()
+GAP_MIN = int(os.environ.get('MIN_GAP_MINUTES', '45'))           # never two reels closer than this
+
+def post_next_reel():
+    """Post ONE reel: the next part of the current block. Runs hourly 08:00-15:00 Perth.
+    A new block only starts if no block has started today, so one block goes out per day, one reel per hour."""
+    now = datetime.datetime.now(PERTH); today = now.strftime('%Y-%m-%d')
+    rows = list(csv.DictReader(open('blocks.csv'))); log = {}
+    if os.path.exists(LOG):
+        for r in csv.reader(open(LOG)):
+            if len(r) > 3 and r[3] == 'posted' and not r[1].startswith(('carousel:', '000 ')):
+                log[r[1]] = datetime.datetime.strptime(r[0][:16], '%Y-%m-%d %H:%M').replace(tzinfo=PERTH)
+    if log and (now - max(log.values())).total_seconds() < GAP_MIN * 60:
+        print(f'Last reel went out under {GAP_MIN} min ago - waiting for the next run.'); return
     blocks = {}
     for r in rows: blocks.setdefault(int(r['block']), []).append(r)
     for b in sorted(blocks):
-        todo = [r for r in sorted(blocks[b], key=lambda r: int(r['post_order'])) if r['queue_file'] not in done]
+        parts = sorted(blocks[b], key=lambda r: int(r['post_order']))
+        todo = [r for r in parts if r['queue_file'] not in log]
         if not todo: continue
-        print(f"Block {b}: {todo[0]['block_name']} ({len(todo)} to post)")
-        missing = [r['queue_file'] for r in todo if not os.path.exists(os.path.join('queue', r['queue_file']))]
-        if missing: raise RuntimeError(f'Missing from queue/: {missing}')
-        for r in todo: post_one(r['queue_file']); time.sleep(20)
-        return
+        if not any(r['queue_file'] in log for r in parts):          # fresh block: only if no block started today
+            for bb in sorted(blocks):
+                first = [log[r['queue_file']] for r in blocks[bb] if r['queue_file'] in log]
+                if first and min(first).strftime('%Y-%m-%d') == today:
+                    print(f"Today's block (block {bb}) has started or finished - block {b} starts tomorrow at 08:00."); return
+        r = todo[0]
+        print(f"Block {b}: {r['block_name']} - posting {r['queue_file']} ({len(todo) - 1} left after this)")
+        if not os.path.exists(os.path.join('queue', r['queue_file'])): raise RuntimeError(f"Missing from queue/: {r['queue_file']}")
+        post_one(r['queue_file']); return
     print('Nothing left to post. Add more blocks!')
 
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'check'
     if mode == 'check': check()
-    elif mode == 'post': check(); post_next_block()
+    elif mode == 'post': check(); post_next_reel()
     elif mode == 'test': check(); post_one(sys.argv[2])
     elif mode == 'carousel':
         check()
