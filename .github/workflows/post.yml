@@ -1,12 +1,12 @@
 name: Post to Instagram
 on:
   schedule:
-    - cron: '0 0 * * *'          # 08:00 Perth: next block of reels
-    - cron: '0 4 * * *'          # 12:00 Perth: carousel for the previous day's block (if one is ready)
+    - cron: '0 0-7 * * *'        # hourly 08:00-15:00 Perth: one reel per run (one block per day; spare runs cover GitHub delays)
+    - cron: '30 4 * * *'         # 12:30 Perth: carousel for the previous day's block (if one is ready)
   workflow_dispatch:
     inputs:
       mode:
-        description: 'check = test the setup only, post = post the next block, test = post one file, carousel = post the next due carousel (or the folder named below)'
+        description: 'check = test the setup only, post = post the next reel of todays block, test = post one file, carousel = post the next due carousel (or the folder named below)'
         default: 'check'
         type: choice
         options: [check, post, test, carousel]
@@ -29,7 +29,7 @@ jobs:
           COVER_BASE_URL: ${{ vars.COVER_BASE_URL }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
-          if [ -z "$MODE" ]; then if [ "${{ github.event.schedule }}" = "0 4 * * *" ]; then MODE=carousel; else MODE=post; fi; fi
+          if [ -z "$MODE" ]; then if [ "${{ github.event.schedule }}" = "30 4 * * *" ]; then MODE=carousel; else MODE=post; fi; fi
           if [ "$MODE" = "carousel" ]; then python post.py carousel "${{ github.event.inputs.file }}"
           elif [ "$MODE" = "test" ]; then python post.py test "${{ github.event.inputs.file }}"; else python post.py "$MODE"; fi
       - name: Save the post log
