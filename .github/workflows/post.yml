@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'check = test the setup only, post = post the next reel of todays block, test = post one file, carousel = post the next due carousel (or the folder named below)'
+        description: 'check = test the setup only, audio = list trending music, post = post the next reel of todays block, test = post one file, carousel = post the next due carousel (or the folder named below)'
         default: 'check'
         type: choice
-        options: [check, post, test, carousel]
+        options: [check, post, test, carousel, audio]
       file:
         description: 'test mode: queue file name (e.g. 186 PP-01.01 What is an ODE_rev20261124_a.mp4). carousel mode: optional folder name in carousels/'
         required: false
@@ -27,6 +27,7 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           COVER_BASE_URL: ${{ vars.COVER_BASE_URL }}
+          USE_IG_AUDIO: ${{ vars.USE_IG_AUDIO }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
           if [ -z "$MODE" ]; then if [ "${{ github.event.schedule }}" = "30 4 * * *" ]; then MODE=carousel; else MODE=post; fi; fi
@@ -36,5 +37,5 @@ jobs:
         if: always()
         run: |
           git config user.name "mayfair-poster"; git config user.email "actions@users.noreply.github.com"
-          git add posted.csv 2>/dev/null || true
+          git add posted.csv 2>/dev/null || true; git add audio_trending.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Post log $(date -u +%F)" && git push)
