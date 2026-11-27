@@ -1,5 +1,7 @@
-Colour each seed by its number mod 21, 34 or 55 and the spiral arms pop out: 21, 34, 55 - Fibonacci numbers, each one the sum of the two before. Real sunflowers have the same counts.
+Colour every 8th seed, then every 13th, 21st, 34th: each time you get a set of spirals, and the counts are Fibonacci numbers. Why? 13 × 137.508° ≈ 5 whole turns, 21 × 137.508° ≈ 8 whole turns, 34 × 137.508° ≈ 13 whole turns, so every 13th (or 21st, 34th) seed drifts slowly round into a spiral. Real sunflowers show 34 and 55, or 55 and 89. Go and count one.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 4.
 
-#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #sunflower #phyllotaxis #maths #nature #mathart #python #generativeart #stem

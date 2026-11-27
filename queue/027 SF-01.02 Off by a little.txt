@@ -1,5 +1,7 @@
-Change the turn by half a degree and the sunflower falls apart: 137.0° and 138.0° open curved gaps, 90° gives four straight spokes. Only the golden angle never lines the seeds up.
+Change the turn by half a degree and the sunflower falls apart. 137.0° is close to the fraction 8/21 of a turn, so the seeds pile up on 21 curved arms with gaps between them. 138.0° is close to 5/13: 13 arms. 90° is exactly 1/4: four straight spokes. Packing score (worst spacing while growing, 1 = perfect hexagons): 0.88 at the golden angle, 0.55 at 137.0°, 0.51 at 138.0°, 0.03 at 90°.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 4. Follow for part 3: the full sweep.
 
-#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #sunflower #phyllotaxis #maths #nature #mathart #python #generativeart #stem

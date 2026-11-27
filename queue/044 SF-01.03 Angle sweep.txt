@@ -1,5 +1,7 @@
-Sweep the turn angle from 132° to 143° and watch the pattern snap between spokes and spirals - it only packs perfectly at the golden angle, 137.5°. Plants found this number by evolution.
+Sweep the turn from 132° to 137.7°. Every angle near a simple fraction of a turn makes arms: 135° = 3/8 makes 8 spokes, 8/21 makes 21 arms. As the fractions get more complicated the arms multiply and the gaps shrink, and right at 137.508° (between all the Fibonacci fractions 5/13, 8/21, 13/34 …) the arms vanish and the packing is the best of any angle. Plants found this number by evolution.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 4. Follow for part 4: counting the spirals.
 
-#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #sunflower #phyllotaxis #maths #nature #mathart #python #generativeart #stem
