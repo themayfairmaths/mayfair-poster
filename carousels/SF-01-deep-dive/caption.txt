@@ -1,0 +1,10 @@
+The maths of a sunflower, in 8 slides:
+
+1. Vogel's model: turn 137.508°, step out by √n. The √n gives every seed the same space.
+2. Where 137.508° comes from: 360°/φ², and why the Fibonacci ratios close in on φ.
+3. Why the most irrational number packs best: fractions make spokes, φ never lines up.
+4. A packing score for every angle, and why the spirals you count are Fibonacci numbers.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #sunflower #phyllotaxis #maths #nature #mathart #python #stem
