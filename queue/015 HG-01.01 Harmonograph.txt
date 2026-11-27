@@ -1,0 +1,5 @@
+A harmonograph: two pendulums swing the pen left-right, two swing it up-down, and friction slowly shrinks every swing. Four sine waves and an exponential - x = Σ A sin(ft + p)e^(−dt) - draw this.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#harmonograph #mathart #maths #physics #excel #generativeart #pendulum

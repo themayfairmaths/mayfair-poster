@@ -1,0 +1,5 @@
+An exact 2:3 ratio traces the same figure over and over. Detune it by 0.3% and the figure slowly rotates; by 1% it becomes a spirograph. A tiny mismatch builds up a phase drift.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#harmonograph #mathart #maths #physics #excel #generativeart #pendulum

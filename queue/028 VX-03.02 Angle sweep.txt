@@ -1,0 +1,5 @@
+Turning a triangle 10° at a time. By 60° it's flat face first - and the street slows right down.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

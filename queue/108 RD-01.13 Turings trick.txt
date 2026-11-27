@@ -1,0 +1,5 @@
+Why do patterns form at all? If both chemicals spread at the same rate, the pattern dies. Make the inhibitor spread faster and a pattern appears - Alan Turing's 1952 idea for animal coat patterns.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

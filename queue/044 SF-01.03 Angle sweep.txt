@@ -1,0 +1,5 @@
+Sweep the turn angle from 132° to 143° and watch the pattern snap between spokes and spirals - it only packs perfectly at the golden angle, 137.5°. Plants found this number by evolution.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart

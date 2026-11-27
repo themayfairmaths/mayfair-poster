@@ -1,0 +1,5 @@
+Change the turn by half a degree and the sunflower falls apart: 137.0° and 138.0° open curved gaps, 90° gives four straight spokes. Only the golden angle never lines the seeds up.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart

@@ -1,0 +1,5 @@
+Fill the grid with random cells and apply the rules. Chaos burns for hundreds of generations, then settles into blocks, beehives, blinkers and the odd glider sailing off. Order from simple rules.
+
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #maths #excel #computerscience #emergence

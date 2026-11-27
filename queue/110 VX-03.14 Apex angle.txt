@@ -1,0 +1,5 @@
+Sharpen a triangle from a blunt 120° to a 30° needle. Blunter (and shorter) means faster shedding.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

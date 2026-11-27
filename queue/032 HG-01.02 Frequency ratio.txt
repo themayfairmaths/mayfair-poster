@@ -1,0 +1,5 @@
+Change the ratio of the left-right and up-down frequencies: 1:2, 2:3, 3:4, 3:5. These are the same ratios as the octave, fifth, fourth and sixth in music - simple ratios make clean shapes and sweet sounds.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#harmonograph #mathart #maths #physics #excel #generativeart #pendulum

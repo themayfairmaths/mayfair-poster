@@ -1,0 +1,5 @@
+Colour each seed by its number mod 21, 34 or 55 and the spiral arms pop out: 21, 34, 55 - Fibonacci numbers, each one the sum of the two before. Real sunflowers have the same counts.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart

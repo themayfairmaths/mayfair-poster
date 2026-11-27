@@ -1,0 +1,5 @@
+Same three rules, three tiny starts. The glider (5 cells) just walks diagonally. The R-pentomino (also 5 cells) explodes into chaos for over 1,000 generations. The acorn (7 cells) grows into a whole city.
+
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #maths #excel #computerscience #emergence

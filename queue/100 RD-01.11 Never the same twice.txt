@@ -1,0 +1,5 @@
+Same two numbers, four different random seeds, four different mazes. Like fingerprints: same rules, never identical.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns

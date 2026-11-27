@@ -1,0 +1,5 @@
+Point first or flat face first? Same triangle, flipped. Point first sheds about 40% faster (St 0.196 vs 0.141).
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

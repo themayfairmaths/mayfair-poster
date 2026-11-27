@@ -1,0 +1,5 @@
+One rule makes a sunflower: each new seed turns 137.5° from the last and sits a bit further out (r = √n). That's the golden angle, 360°(1 − 1/φ) - and it packs 1,000 seeds with no gaps.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#goldenratio #fibonacci #maths #nature #excel #sunflower #mathart
