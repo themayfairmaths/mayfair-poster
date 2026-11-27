@@ -1,0 +1,10 @@
+Corners, angles and length: what sets the beat of a wake. 10 slides on the square series, all at Re = 100:
+
+1. Round the corners and the flow lets go later: St 0.134 → 0.156.
+2. Turn the square and it looks wider: W = D(cos θ + sin θ). St drops on D but rises on W. Always check the yardstick.
+3. Stretch it along the flow and the swirls form later: St 0.140 → 0.116.
+4. How we measure St from a probe, the solver underneath, and what a 2D model leaves out.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #windengineering #engineering #maths #python #stem
