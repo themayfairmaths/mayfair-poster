@@ -1,0 +1,5 @@
+How does insulation actually work? Inside face 20 °C, outside 0 °C, real brick (k = 0.7) and insulation (k = 0.035). Every layer is a resistance R = L/k, and resistances in series add. Solid brick lets 46 W/m² out. Add 90 mm of insulation and almost the whole 20 °C drop happens inside it: 6.9 W/m², about 7× less. Then put a stud through it: timber adds 32%, but one 3 mm steel stud more than doubles the heat loss. That's a thermal bridge.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#heattransfer #insulation #building #construction #engineering #physics #maths #python #stem

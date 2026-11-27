@@ -1,0 +1,7 @@
+Same temperature. Why does metal feel colder? A 34 °C fingertip touches four blocks, all at 20 °C. Your skin senses heat flow, not temperature. Where they touch, both sides share one temperature and one heat flow, which gives the contact temperature T = (e₁T₁ + e₂T₂)/(e₁ + e₂) with e = √(kρc). Aluminium drags your skin down to about 21 °C, glass to 26 °C, wood only to 31 °C, and foam leaves it near 34 °C. That's why tiles feel colder than carpet in the same room.
+
+Send this to someone who thinks the metal is colder.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#heattransfer #physics #science #engineering #thermodynamics #maths #python #stem #everydayscience

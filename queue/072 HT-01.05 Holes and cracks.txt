@@ -1,0 +1,5 @@
+Which hole blocks heat the most? The left edge is held at 100 °C and the right at 0 °C; the top, bottom and the hole edges are insulated (∂T/∂n = 0), so no heat can cross a hole and it has to crowd round it. A circular hole crowds heat 2× at its edge, big or small (theory says exactly 2). A square's sharp corners push that to 2.4×. And the same slot is harmless along the flow (×1.5) but nasty across it (×3.6, and 18% less heat gets through). Stress does exactly the same thing round holes and cracks.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#heattransfer #engineering #maths #physics #thermodynamics #mechanicalengineering #python #simulation #stem

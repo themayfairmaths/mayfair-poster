@@ -1,0 +1,7 @@
+Why do thick steaks take forever? Heat soaks in by diffusion, so the time goes with thickness squared (t ∝ L²/α). Real meat (α ≈ 1.2×10⁻⁷ m²/s) from the fridge on a 150 °C pan, done at 55 °C in the middle: 1.5 cm takes 4.8 min, 3 cm takes 17.7 min, 4.5 cm takes 38.5 min. Flip the 3 cm steak every minute and both faces take turns on the pan: 10.5 min. Black lines show 55 °C (pink) and 70 °C (grey). Simulation, not a recipe.
+
+Do you flip once or every minute?
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#heattransfer #cooking #steak #foodscience #physics #maths #engineering #python #stem

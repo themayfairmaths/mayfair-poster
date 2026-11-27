@@ -1,0 +1,7 @@
+Which heat sink fin shape cools best? A 15 W chip under a 5 cm-deep aluminium sink, air at 25 °C. Every metal-air edge loses heat by convection, −k ∂T/∂n = h(T − T_air), so fins work by adding edge. No fins: heading for 300 °C. Four thick fins: 78 °C. Tapered: 63 °C. Branched: 60 °C from the lightest sink. Ten thin fins: 50 °C. In real life, fins that are too close choke the airflow, so there's a sweet spot.
+
+Which one would you pick?
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#heattransfer #heatsink #electronics #engineering #thermodynamics #maths #physics #python #stem
