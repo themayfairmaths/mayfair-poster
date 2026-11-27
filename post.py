@@ -1,4 +1,5 @@
-"""CHANGES 2026-11-27: trending music now via a Facebook Login token; video_volume 0 -> 1 (Meta only accepts 1-100, so 0 may have made Instagram drop the song).
+"""CHANGES 2026-11-27 (b): reels with music now sent by public video_url instead of resumable upload (music was still ignored).
+CHANGES 2026-11-27: trending music now via a Facebook Login token; video_volume 0 -> 1 (Meta only accepts 1-100, so 0 may have made Instagram drop the song).
 Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
 Runs on GitHub Actions. Secrets: IG_TOKEN (system-user token), IG_USER_ID (Instagram account ID).
 Usage: python post.py check   -> verify token, account and publishing limit (posts nothing)
@@ -17,6 +18,7 @@ VER = os.environ.get('GRAPH_VERSION', 'v25.0'); G = f'https://graph.facebook.com
 TOKEN = os.environ.get('IG_TOKEN', '').strip(); IGID = os.environ.get('IG_USER_ID', '').strip()
 COVER_BASE = os.environ.get('COVER_BASE_URL', '').strip()      # e.g. https://raw.githubusercontent.com/<you>/<repo>/main/covers/  (public repo only)
 CAR_BASE = os.environ.get('CAROUSEL_BASE_URL', '').strip() or COVER_BASE.replace('/covers/', '/carousels/')
+QUEUE_BASE = COVER_BASE.replace('/covers/', '/queue/') if COVER_BASE else ''   # public URL of queue/ (reels with music are sent by URL, like Meta's own example)
 LOG = 'posted.csv'; PERTH = datetime.timezone(datetime.timedelta(hours=8))
 
 def req(method, url, params=None, data=None, headers=None):
@@ -118,13 +120,15 @@ def post_one(mp4):
             track = pick_audio()
             if track: p['audio_configuration'] = json.dumps({'audio_id': track['audio_id'], 'audio_volume': 100, 'video_volume': 1})
         except Exception as e: print('Trending audio unavailable, using the video\'s own music:', str(e)[:300]); track = None
+    if track and QUEUE_BASE: p.pop('upload_type', None); p['video_url'] = QUEUE_BASE + urllib.parse.quote(mp4)
     try: c = req('POST', f'{G}/{IGID}/media', p)
     except RuntimeError as e:
         if 'audio_configuration' not in p: raise
         print('Instagram refused the trending track, posting with the video\'s own music:', str(e)[:300]); p.pop('audio_configuration'); track = None
         c = req('POST', f'{G}/{IGID}/media', p)
     cid = c['id']; uri = c.get('uri') or f'https://rupload.facebook.com/ig-api-upload/{VER}/{cid}'
-    with open(path, 'rb') as f:
+    if 'video_url' not in p:
+      with open(path, 'rb') as f:
         req('POST', uri, data=f.read(), headers={'Authorization': f'OAuth {TOKEN}', 'offset': '0', 'file_size': str(size), 'Content-Type': 'application/octet-stream'})
     for _ in range(60):                                             # wait up to ~10 min for processing
         st = req('GET', f'{G}/{cid}', {'fields': 'status_code,status'})
