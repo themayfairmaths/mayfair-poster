@@ -1,5 +1,7 @@
-Two double pendulums, started one billionth of a radian apart. For about 11 seconds you can't tell them apart - then they split and do completely different things. Tiny differences grow exponentially: that's chaos.
+How long can two pendulums agree? Pendulum B starts a tiny angle ε away from pendulum A; same equations, same solver. 0.001 rad apart: obviously different after 3.4 s. A millionth of a radian: 10.0 s. A billionth: 13.9 s. The gap grows roughly like ε·e^(λt), so every 1,000× better start buys only about 5 more seconds of agreement. That's the butterfly effect, on your desk.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Send this to someone who thinks more precision fixes everything.
 
-#chaos #doublependulum #physics #maths #excel #engineering #science
+Rendered in Python (RK4, Δt = 0.005 s). Excel workbook coming soon - follow so you don't miss it.
+
+#doublependulum #butterflyeffect #chaos #physics #maths #math #python #simulation #stem #science

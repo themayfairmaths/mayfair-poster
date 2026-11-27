@@ -1,5 +1,7 @@
-Same double pendulum, three starting angles. 10°: calm and regular, like a clock. 90°: getting wild. 170°: full chaos, flipping over the top.
+When does a pendulum turn chaotic? Start both arms at 30° and its path in angle space retraces a neat band. At 100° patches of order and chaos mix. At 170° it flips over the top again and again and scribbles over everything. Then every start at once: 57,600 pendulums, coloured by when they first flip. Grey ones never have the energy (2cos θ₁ + cos θ₂ > 1). The border between calm and chaos is a fractal.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Save this one: the flip map is worth pausing on.
 
-#chaos #doublependulum #physics #maths #excel #engineering #science
+Rendered in Python (RK4). Excel workbook coming soon - follow so you don't miss it.
+
+#doublependulum #chaos #fractal #physics #maths #math #python #mathart #simulation #stem

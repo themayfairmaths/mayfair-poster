@@ -1,5 +1,7 @@
-One pendulum swings like clockwork. Hang a second one off the end and it becomes chaotic - it flips, whips and never repeats the same swing twice. Four equations, solved step by step with Runge-Kutta.
+Add one more joint. Get chaos. A single pendulum started at 120° swings like a clock: θ̈ = −(g/L) sin θ, one rhythm forever. Two arms at small angles (15°, 15°) are still calm: two gentle rhythms mixed together. Two arms started high (120°, 160°) flip over the top at unpredictable moments. Same physics, no friction, and the total energy stays fixed the whole time, which is how we check the RK4 solver is honest.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for part 2: the butterfly effect.
 
-#chaos #doublependulum #physics #maths #excel #engineering #science
+Rendered in Python (RK4, Δt = 0.005 s). Excel workbook coming soon - follow so you don't miss it.
+
+#doublependulum #chaos #physics #maths #math #differentialequations #python #simulation #stem #science

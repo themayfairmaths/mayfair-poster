@@ -1,5 +1,7 @@
-60 double pendulums, each started 0.0000001 rad further over than the last. For a few seconds they move as one - then chaos fans them out like a firework.
+60 pendulums. Identical? Watch. Their bottom arms start spread over just 0.00002 rad in total (0.0006°), coloured by starting angle. From 100° they stay together for a few seconds, then fan out. From 140° the rainbow opens fast. From 175°, balanced near the top, they split almost at once. Same equations, same moment, and the future still splits.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for more maths you can see.
 
-#chaos #doublependulum #physics #maths #excel #engineering #science
+Rendered in Python (RK4, Δt = 0.005 s). Excel workbook coming soon - follow so you don't miss it.
+
+#doublependulum #chaos #butterflyeffect #physics #maths #math #python #mathart #simulation #stem
