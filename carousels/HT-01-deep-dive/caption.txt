@@ -1,0 +1,9 @@
+The maths of heat flow 🔥 Swipe for the numbers behind this week's heat reels.
+
+One law (Fourier, 1822) and three kinds of boundary: fix the temperature, fix the heat flow, or let the air carry it away. From that you get why insulation works like resistors in series, why a steak twice as thick takes four times as long, why fins stop helping, why metal feels colder than wood at the same temperature, and why cracks across the flow are worse than round holes.
+
+Rendered in Python with an implicit finite-difference solver and real material properties. The Excel heat-plate workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#heattransfer #physics #engineering #maths #math #thermodynamics #mechanicalengineering #stem #simulation #python
