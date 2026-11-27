@@ -1,5 +1,7 @@
-Fix c, start z at each pixel and repeat z → z² + c. That's a Julia set. Walk c slowly round a circle and the fractal melts from one shape into the next.
+Same rule, z → z² + c, but now fix c and colour each starting point z. That's a Julia set. Walk c from 0 to −0.6: one crumpled blob. Walk it into the period-3 bulb: Douady's rabbit, three ears on every blob. Step c outside the Mandelbrot set and the whole thing shatters into dust. The theorem behind it (Fatou and Julia, 1919): the Julia set is one piece exactly when the orbit of 0 stays bounded. The Mandelbrot set is a map of every Julia set.
 
-Rendered in Python with exactly the same iteration as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 3. Follow for part 3: a gallery.
 
-#mandelbrot #fractal #maths #mathart #excel #juliaset #complexnumbers
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #juliaset #complexnumbers #chaos #maths #mathart #python #generativeart #stem

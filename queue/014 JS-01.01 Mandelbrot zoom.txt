@@ -1,5 +1,7 @@
-Zooming ten million times into the edge of the Mandelbrot set, near seahorse valley. Every pixel is one question: start at z = 0, repeat z → z² + c - does it fly off to infinity? Colour = how fast it escapes. One line of algebra, infinite detail.
+One line of algebra: z → z² + c. Each pixel is a number c. Start at z = 0 and keep squaring and adding c. If |z| ever passes 2 it flies off to infinity; colour the pixel by how fast. If it never escapes, the pixel is in the Mandelbrot set (black). c = 0.24 stays small for ever, c = 0.26 escapes after 29 steps: the edge is that sharp. Then zoom ×300 into seahorse valley and ×100,000 beyond: the boundary never runs out of detail (it has fractal dimension 2, Shishikura 1998).
 
-Rendered in Python with exactly the same iteration as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 3. Follow for part 2: Julia sets.
 
-#mandelbrot #fractal #maths #mathart #excel #juliaset #complexnumbers
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #juliaset #complexnumbers #chaos #maths #mathart #python #generativeart #stem

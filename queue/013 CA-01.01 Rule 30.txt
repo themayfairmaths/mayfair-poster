@@ -1,5 +1,7 @@
-Start with one black cell. Each new row looks at the row above: every cell checks itself and its two neighbours, and the number 30 written in binary (00011110) says what to do. The result is chaos - Rule 30 is random enough to generate random numbers.
+One black cell, one rule. Each new cell looks at three cells above it (left, centre, right): 8 possible patterns, and the rule number 30 = 00011110 in binary gives the answer for each. The left side makes stripes, the right side chaos. The centre column has never been shown to repeat, and Mathematica used it to make random numbers. Flip one starting cell and the difference spreads in a cone, at most one cell per step.
 
-Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 4. Follow for part 2: four famous rules.
 
-#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #rule30 #rule110 #wolfram #emergence #maths #computerscience #python #generativeart #stem

@@ -1,5 +1,7 @@
-Every elementary cellular automaton there is - all 256 rules - in 12 seconds. Most are boring: blank, stripes, triangles. A few are magic. Pause on your favourite and comment its number.
+3 cells, each 0 or 1, gives 8 patterns, so a rule is 8 output bits: exactly 256 rules. Here they all are. Mirror a rule (swap left and right) or swap black and white and you get an equivalent rule, so the 256 fall into just 88 families. Then run every rule from a random row, zip the result and sort by how badly it compresses: most rules are boring and only a handful are truly wild.
 
-Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 4. Follow for part 4: the rule that computes.
 
-#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #rule30 #rule110 #wolfram #emergence #maths #computerscience #python #generativeart #stem

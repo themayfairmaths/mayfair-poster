@@ -1,5 +1,7 @@
-Rule 110 from a single cell, then from a random row. Watch the travelling structures - 'gliders' - crash and interact. In 2004 Matthew Cook proved Rule 110 is Turing complete: in principle it can run any computer program.
+Rule 110 = 01101110. From one cell it only grows to the left, over a repeating background called the ether. From a random start, most of the mess settles and what survives are gliders: diagonal stripes that travel. When gliders collide they vanish, pass through or make new ones, and Matthew Cook (2004) used those collisions to build logic. Rule 110 is Turing complete: 8 bits of rule, a whole computer.
 
-Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 4.
 
-#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #rule30 #rule110 #wolfram #emergence #maths #computerscience #python #generativeart #stem

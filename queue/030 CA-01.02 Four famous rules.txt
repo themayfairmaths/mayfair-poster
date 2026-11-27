@@ -1,5 +1,7 @@
-Same grid, same method, four rule numbers. 30: chaos. 90: a Sierpinski triangle fractal. 110: a pattern that can compute anything. 184: traffic flow - cars move right, jams drift left. One number from 0 to 255 decides everything.
+Same grid, four rule numbers. Rule 30: chaos. Rule 90: new cell = left XOR right, which is Pascal's triangle mod 2, the Sierpinski triangle (row n has 2 to the (number of 1s in binary n) black cells). Rule 110: travelling gliders, proved able to compute anything. Rule 184: traffic. Cars move right if the cell ahead is empty, and at 60% full the jams drift backwards, just like on a motorway.
 
-Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 4. Follow for part 3: all 256 rules.
 
-#cellularautomata #maths #excel #rule30 #complexity #generativeart #computerscience
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #rule30 #rule110 #wolfram #emergence #maths #computerscience #python #generativeart #stem
