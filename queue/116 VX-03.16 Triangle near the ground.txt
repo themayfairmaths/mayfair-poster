@@ -1,0 +1,5 @@
+Unlike the square, a triangle near the ground keeps shedding - its sharp corners fix where the flow lets go. The closer it gets, the faster it sheds: St 0.217 at 2 widths up, 0.448 almost touching.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #aerodynamics

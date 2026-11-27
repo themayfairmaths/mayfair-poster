@@ -1,0 +1,5 @@
+Wind through a 3 × 3 city block. Every street becomes a jet and every building sheds its own swirls.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #windengineering #urbanplanning

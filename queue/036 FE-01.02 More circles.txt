@@ -1,0 +1,5 @@
+How many circles does it take to draw a star? 3 gives a circle, 11 gives a soft star, 31 is nearly there, 101 has sharp corners. The sharp bits need the tiny, fast-spinning circles - the high frequencies.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#fourier #maths #mathart #excel #engineering #signalprocessing #epicycles

@@ -1,0 +1,5 @@
+Sound on. Each tone is that shape's shedding frequency, scaled into hearing range. A square sheds slower than a circle of the same width (St 0.139 vs 0.169), so it sings lower.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #sound

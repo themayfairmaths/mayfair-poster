@@ -1,0 +1,5 @@
+Move a square building down towards the ground. At 2 widths up it sheds a normal vortex street. At 1 width the ground drags the lower vortices along. At half a width the shedding stops - just a wavy wake.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #windengineering #civilengineering

@@ -1,0 +1,5 @@
+Pour grains of sand onto one cell. Any cell with 4 grains topples - it gives one to each neighbour. That's the only rule. Pour 16,384 grains and this fractal grows. White 0, pale 1, green 2, gold 3 grains.
+
+Rendered in Python with exactly the same rule as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#sandpile #fractal #maths #mathart #excel #selforganizedcriticality #complexity

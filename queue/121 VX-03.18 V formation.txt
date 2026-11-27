@@ -1,0 +1,5 @@
+Three triangles in a V, like geese. The wings sit in the leader's wake and everything tangles into big swirls. (Narrow channel - the walls squeeze it.)
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

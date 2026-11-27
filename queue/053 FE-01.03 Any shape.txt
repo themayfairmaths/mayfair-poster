@@ -1,0 +1,5 @@
+Same formula, different points: a heart, a square and a triangle, each drawn with 51 spinning circles. Smooth shapes need only a few big circles; corners need lots of small fast ones.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#fourier #maths #mathart #excel #engineering #signalprocessing #epicycles

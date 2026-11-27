@@ -1,0 +1,5 @@
+Two cylinders side by side: the jet through the gap flips from side to side and the two wakes fight. Pipe racks, chimneys and cables all see this.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

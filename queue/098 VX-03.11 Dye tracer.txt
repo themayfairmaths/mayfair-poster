@@ -1,0 +1,5 @@
+Same flow, two views: vorticity (green and gold = spin) and dye bleeding from the triangle like smoke. The dye leaves the back corners and curls up into the vortex street.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

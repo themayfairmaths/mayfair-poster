@@ -1,0 +1,5 @@
+Can a square draft like a cyclist? Close behind, it hides in the calm pocket. Further back, the front vortices slam into it.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics

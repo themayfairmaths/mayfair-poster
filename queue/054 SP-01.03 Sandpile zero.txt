@@ -1,0 +1,5 @@
+Fill every cell with 6 grains and topple. Take that away from 6 everywhere and topple again. What's left is the 'zero' of the sandpile group: add it to any stable pile and nothing changes. And it looks like this.
+
+Rendered in Python with exactly the same rule as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#sandpile #fractal #maths #mathart #excel #selforganizedcriticality #complexity

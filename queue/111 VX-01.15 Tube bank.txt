@@ -1,0 +1,5 @@
+Flow through a staggered tube bank, like inside a heat exchanger. Jets between the tubes, swirls behind every one.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #heatexchanger #processengineering

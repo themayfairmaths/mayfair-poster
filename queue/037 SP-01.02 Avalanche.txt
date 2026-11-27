@@ -1,0 +1,5 @@
+Drop all 16,384 grains on one cell at once and let it topple. Red cells have 4 or more and are about to topple. Thousands of waves later it settles - into exactly the same picture as pouring one grain at a time. The order never matters (it's an Abelian sandpile).
+
+Rendered in Python with exactly the same rule as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#sandpile #fractal #maths #mathart #excel #selforganizedcriticality #complexity

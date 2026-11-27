@@ -1,0 +1,5 @@
+A cylinder at Re 80 sheds a vortex street. Put a tiny second cylinder - one fifth of the diameter - in the right spot just behind it and the shedding switches off: the wake swing drops from 0.37 to 0.003. Move it half a diameter further back and the street comes back. Strykowski & Sreenivasan found this in experiments in 1990. (Run on a finer 480 × 192 grid - same scheme as the workbook.)
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #flowcontrol

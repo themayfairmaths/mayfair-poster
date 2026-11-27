@@ -1,0 +1,5 @@
+101 circles, each spinning at a whole-number speed and stacked tip to tip, trace out a star. The sizes come from the Fourier transform of the star's outline - one SUMPRODUCT per circle in Excel. Any closed shape is a sum of circles.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+
+#fourier #maths #mathart #excel #engineering #signalprocessing #epicycles
