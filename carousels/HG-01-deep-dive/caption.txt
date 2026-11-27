@@ -1,0 +1,10 @@
+The maths of a harmonograph, in 7 slides:
+
+1. Why a pendulum is a sine wave, and the formula the pen follows.
+2. Every frequency ratio has a shape, and the musical intervals behind them.
+3. Beats and phase drift: why a 0.3% detune makes the figure turn.
+4. Friction makes the art, and the Victorian machine behind it all.
+
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#harmonograph #lissajous #mathart #generativeart #maths #physics #music #python #stem
