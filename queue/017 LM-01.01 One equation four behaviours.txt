@@ -1,5 +1,7 @@
-x_next = r·x·(1 − x): a population that grows but gets crowded. r = 2.8 settles to one value, 3.2 flip-flops between two, 3.5 cycles through four, 3.9 never settles. The red line bounces between the curve and the diagonal - a cobweb plot.
+One equation. Four behaviours. xₙ₊₁ = r·xₙ(1 − xₙ), drawn as a cobweb: up to the curve, across to the diagonal, repeat. r = 2.8: it spirals into the fixed point x* = 1 − 1/r, stable because the slope there |2 − r| < 1. r = 3.2: that slope passes −1 and a 2-cycle is born (0.513 ↔ 0.799). r = 3.5: four values. r = 3.9: chaos, no pattern at all. Same line of algebra, one knob.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for part 2: the bifurcation diagram.
 
-#chaos #logisticmap #maths #fractal #excel #bifurcation #science
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #logisticmap #maths #math #cobweb #dynamics #python #mathart #stem #science

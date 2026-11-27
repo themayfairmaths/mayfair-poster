@@ -1,5 +1,7 @@
-Zoom 150× into the chaotic part of the bifurcation diagram, near r = 3.85, and the whole diagram appears again in miniature: period doubling, then chaos. It's a fractal - and the splits shrink by Feigenbaum's constant, 4.669, every time.
+Zoom into chaos and find order. The chaotic part of the bifurcation diagram has clean white gaps: windows where the map settles again. The biggest starts at r = 1 + √8 = 3.8284 with a stable 3-cycle. Zoom ×30 into it and the whole diagram reappears in miniature: 3 → 6 → 12 → chaos. Zoom ×100 into one branch and it happens again. A fractal hidden in one line of algebra. (Li & Yorke, 1975: period three implies chaos.)
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Send this to someone who likes fractals.
 
-#chaos #logisticmap #maths #fractal #excel #bifurcation #science
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #fractal #bifurcation #logisticmap #maths #math #mathart #python #stem #science

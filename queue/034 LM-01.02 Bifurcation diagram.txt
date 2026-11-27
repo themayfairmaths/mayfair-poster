@@ -1,5 +1,7 @@
-Sweep r from 2.5 to 4 and plot where x ends up. One value splits into 2, then 4, then 8… and at r ≈ 3.57 it becomes chaos - with calm windows hidden inside. The most famous picture in chaos theory, from one line of algebra.
+The most famous picture in chaos. For every r, run the logistic map 600 times, then plot where it ends up. One line splits into 2, 4, 8 … then smears into chaos at r ≈ 3.57. The Lyapunov exponent λ = average of ln|r(1 − 2x)| measures it: below zero is order, above zero is chaos. And the splits come faster by the same ratio every time, δ = 4.669: Feigenbaum's constant, the same for any one-hump map.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Save this one: it's the map of chaos.
 
-#chaos #logisticmap #maths #fractal #excel #bifurcation #science
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #bifurcation #feigenbaum #logisticmap #maths #math #fractal #python #mathart #stem

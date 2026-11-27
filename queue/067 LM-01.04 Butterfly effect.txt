@@ -1,5 +1,7 @@
-Two populations at r = 3.9 that start one millionth apart. They agree for about 15 generations, then have nothing in common. Same equation, same rules - but a tiny measurement error wrecks the long-range forecast.
+Population maths goes chaotic. At r = 4 the logistic map doubles any tiny error every step on average (λ = ln 2). Start two populations 0.001 apart: they're clearly different after 8 generations. A millionth apart: 17. Ten billionths apart: 30. Every 1,000× better measurement buys only about 10 more steps, and even a computer's 53 binary digits run out after about 53 steps.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for more maths you can see.
 
-#chaos #logisticmap #maths #fractal #excel #bifurcation #science
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #butterflyeffect #logisticmap #maths #math #populationdynamics #python #mathart #stem #science
