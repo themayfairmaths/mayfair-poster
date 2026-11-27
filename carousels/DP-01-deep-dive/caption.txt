@@ -1,0 +1,9 @@
+The maths of a double pendulum 🎢 Swipe for the numbers behind this week's chaos reels.
+
+Start from energy (the Lagrangian), get two coupled equations, step them forward with RK4, and check honesty by watching the energy (Euler gains 29 J in 20 s, RK4 drifts by 0.0002 J). Small swings hide two notes at 0.382 Hz and 0.921 Hz. Big swings lose certainty at about 1.3 per second. And the flip map: 57,600 pendulums, a fractal border, and the exact energy rule for which starts can never flip.
+
+Rendered in Python. The Excel double pendulum workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#doublependulum #chaos #physics #maths #math #lagrangian #python #simulation #mathart #stem
