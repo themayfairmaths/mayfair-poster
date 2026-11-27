@@ -1,0 +1,12 @@
+The maths of z² + c, in 10 slides:
+
+1. Squaring a complex number squares its length and doubles its angle.
+2. Why the escape line is exactly 2 (a 3-line proof).
+3. Orbits of 0: settle, cycle or escape. Each bulb has its own period.
+4. The main cardioid and the period-2 disk have exact formulas.
+5. Fatou and Julia (1919): a Julia set is one piece exactly when c is in the Mandelbrot set.
+6. Where the smooth colours come from, and why deep zooms cost more steps.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#mandelbrot #fractal #juliaset #complexnumbers #chaos #maths #mathart #python #stem
