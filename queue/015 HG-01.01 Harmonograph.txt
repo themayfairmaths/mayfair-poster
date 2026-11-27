@@ -1,5 +1,7 @@
-A harmonograph: two pendulums swing the pen left-right, two swing it up-down, and friction slowly shrinks every swing. Four sine waves and an exponential - x = Σ A sin(ft + p)e^(−dt) - draw this.
+A harmonograph: two pendulums swing the pen left-right, two swing it up-down, and friction slowly shrinks every swing. x = Σ A sin(f t + p) e^(−d t). With no friction, frequencies 2 and 3 trace one closed Lissajous loop for ever. Add friction e^(−0.004 t) (half size every 173 s) and the loop spirals in. Detune the four pendulums slightly and the pairs beat.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 4. Follow for part 2: musical ratios.
 
-#harmonograph #mathart #maths #physics #excel #generativeart #pendulum
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#harmonograph #lissajous #mathart #generativeart #maths #physics #pendulum #python #stem

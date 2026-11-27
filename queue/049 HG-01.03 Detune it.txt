@@ -1,5 +1,7 @@
-An exact 2:3 ratio traces the same figure over and over. Detune it by 0.3% and the figure slowly rotates; by 1% it becomes a spirograph. A tiny mismatch builds up a phase drift.
+An exact 2:3 ratio keeps the figure still. Make the y pendulum 0.3% fast (3.009 instead of 3) and y gains 0.009 rad a second, so the figure slowly turns (one full turn every ~700 s). At 1% it turns every ~209 s and fills the square. A tiny mismatch adds up.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 4. Follow for part 4: damping.
 
-#harmonograph #mathart #maths #physics #excel #generativeart #pendulum
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#harmonograph #lissajous #mathart #generativeart #maths #physics #pendulum #python #stem

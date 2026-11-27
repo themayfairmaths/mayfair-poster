@@ -1,5 +1,7 @@
-No damping: the pendulums swing for ever and the pen fills the square. Light damping: a spiral rose. Heavy damping: it dies out quickly. The e^(−dt) term is the friction that makes the art.
+Friction is the e^(−d t). With d = 0 the swing never shrinks and the pen fills the box. d = 0.004 halves the swing every 173 s: a spiral rose. d = 0.03 halves it every 23 s and after 100 s only 5% is left. Just the right friction makes the art.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 4. Which ratio should I draw next?
 
-#harmonograph #mathart #maths #physics #excel #generativeart #pendulum
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#harmonograph #lissajous #mathart #generativeart #maths #physics #pendulum #python #stem

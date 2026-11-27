@@ -1,5 +1,7 @@
-Change the ratio of the left-right and up-down frequencies: 1:2, 2:3, 3:4, 3:5. These are the same ratios as the octave, fifth, fourth and sixth in music - simple ratios make clean shapes and sweet sounds.
+Change the ratio of the left-right and up-down frequencies: 1:2, 2:3, 3:4, 3:5. These are the octave, perfect fifth, perfect fourth and major sixth in music. Small whole-number ratios close the figure after a few swings: clean shapes, sweet sounds.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 4. Follow for part 3: detune it.
 
-#harmonograph #mathart #maths #physics #excel #generativeart #pendulum
+Rendered in Python with exactly the same formulas as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#harmonograph #lissajous #mathart #generativeart #maths #physics #pendulum #python #stem
