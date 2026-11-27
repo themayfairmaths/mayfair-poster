@@ -1,0 +1,10 @@
+The maths of the Game of Life, in 8 slides:
+
+1. The three rules worked by hand, and the shapes that stop, repeat or move (the glider: speed c/4).
+2. Methuselahs: 5 or 7 cells that take 130, 1,103 or 5,206 steps to settle.
+3. The $50 glider gun, and what random soup leaves behind: about 5% alive from almost any start.
+4. Why Life is Turing complete, and what that means.
+
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #emergence #maths #computerscience #python #stem
