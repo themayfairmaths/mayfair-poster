@@ -1,0 +1,9 @@
+When swirls break things 🌀 Swipe for the maths behind this week's real-world wake reels.
+
+Why a perfectly centred cylinder never sheds (and real ones always do), why wind tunnels work (match Re, match the flow), the pitch of the wind (f = St·U/D), the resonance curve that snaps thermowells, the 1995 Monju sodium leak, what the seabed does to a pipeline's wake, how engineers kill the swirls, and the one number designers check: reduced velocity.
+
+Rendered in Python with a vorticity–streamfunction solver. The Excel vortex workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#cfd #fluiddynamics #vortexshedding #resonance #engineering #offshore #maths #python #simulation #stem
