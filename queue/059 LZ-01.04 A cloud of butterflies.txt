@@ -1,0 +1,7 @@
+2,000 starts, the same three equations. Where do they go? A ball of starting points only 0.001 wide stays together for a while, then grows like e^(0.9t) until it covers both wings of the Lorenz butterfly. Colour the points by where they started and you see stretch and fold, like kneading dough: neighbours separate while the volume shrinks by e^(−13.7) every unit of time. Start a red ball on the left wing and a green one on the right and within about 8 time units half of each colour is on each side. You can know the rules exactly and still lose the future.
+
+Follow for more maths you can see.
+
+Rendered in Python (RK4, Δt = 0.01). Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #butterflyeffect #maths #math #physics #python #stem #mathart #simulation

@@ -1,0 +1,7 @@
+Measure 1,000× better. How much longer can you predict? Two Lorenz paths start a gap ε apart. The gap grows like ε·e^(λt) with λ ≈ 0.90 (the Lyapunov exponent), so they look different once t ≈ ln(1/ε)/λ. A thousandth apart: they split at t ≈ 18. A millionth: t ≈ 25. A billionth: t ≈ 33. A trillionth: t ≈ 40. Every 1,000× better measurement buys only about 7.7 more time units. That's why weather forecasts stop at about 10 days.
+
+Send this to someone who trusts the 14-day forecast.
+
+Rendered in Python (RK4, Δt = 0.01). Excel workbook coming soon - follow so you don't miss it.
+
+#butterflyeffect #chaos #lorenzattractor #weather #maths #math #physics #python #stem #science

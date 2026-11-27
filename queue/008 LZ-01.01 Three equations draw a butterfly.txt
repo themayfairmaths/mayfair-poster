@@ -1,0 +1,7 @@
+Three equations draw a butterfly 🦋 In 1963 Edward Lorenz simplified a weather model down to three lines: dx/dt = σ(y − x), dy/dt = x(ρ − z) − y, dz/dt = xy − βz. Start at (1, 1, 1) and the path loops round one wing centre, C± = (±8.5, ±8.5, 27), then flips to the other with no pattern, ever. Turn it in 3D and it's a thin, folded surface: volume shrinks at a rate of 13.7 everywhere, yet it never crosses itself. And if you plot each loop's peak against the one before, every point lands on one tent-shaped curve. Chaos, but not random.
+
+Save this and follow for part 2: the butterfly effect.
+
+Rendered in Python (RK4, Δt = 0.01). Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #lorenzattractor #butterflyeffect #maths #math #physics #differentialequations #python #stem #mathart

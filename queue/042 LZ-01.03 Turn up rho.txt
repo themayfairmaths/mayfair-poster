@@ -1,5 +1,7 @@
-Same equations, change one number. ρ = 14: the path spirals into a fixed point. ρ = 28: chaos, the butterfly. ρ = 160: a single loop repeated for ever. Order, chaos, order again.
+Change one number and watch it break. In the Lorenz equations ρ is how hard the system is driven. ρ = 0.5: everything dies out at the origin. ρ = 14: two rest points C± = (±√(β(ρ−1)), ±√(β(ρ−1)), ρ−1) appear and the path spirals into one. ρ = 21: chaos for a while, then it gives up. Above ρ = σ(σ+β+3)/(σ−β−1) = 24.74 nothing is stable: ρ = 28 is the famous butterfly. Push further and order comes back: ρ = 100 repeats every three loops, ρ = 160 is one big loop.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Save this and follow for part 4.
 
-#chaos #lorenzattractor #maths #physics #excel #butterflyeffect #science
+Rendered in Python (RK4, Δt = 0.01). Excel workbook coming soon - follow so you don't miss it.
+
+#chaos #bifurcation #lorenzattractor #maths #math #physics #differentialequations #python #stem #mathart
