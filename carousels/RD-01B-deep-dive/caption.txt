@@ -1,0 +1,10 @@
+Where Turing patterns come from, in 7 slides:
+
+1. The Gray-Scott equations, term by term.
+2. Turing's condition: below Du/Dv ≈ 1.3 every patch dies; above it a pattern grows.
+3. Same rule, different start: same statistics, different details.
+4. Boundaries shape the pattern, and where Turing patterns turn up in nature.
+
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #alanturing #maths #biology #chemistry #patterns #python #stem
