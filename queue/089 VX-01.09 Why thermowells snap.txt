@@ -1,5 +1,7 @@
-A thermowell is a little tube that sticks into a pipe to hold a temperature sensor. Flow past it sheds vortices, and each one gives it a sideways push. Speed the flow up and the shedding frequency climbs - when it reaches the thermowell's own natural frequency it locks in and shakes itself to fatigue failure. A broken thermowell caused the 1995 sodium leak at Japan's Monju reactor. (The flow is simulated; the natural frequency line is illustrative.)
+Why thermowells snap. A thermowell is a probe tube sticking into pipe flow, and like a guitar string it has a natural frequency fₙ. The swirls shed off it at f = St·U/D. At half of fₙ it barely shakes (1.3× the static push). At 0.75 fₙ it's 2.3×. At 0.99 fₙ each swirl pushes just as the tube swings back: with 2% damping the shaking is about 24× the static push, and thousands of cycles later it cracks. Standards such as ASME PTC 19.3 TW keep shedding well below fₙ.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Engineers: tag someone who's sized a thermowell.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #processengineering #instrumentation
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #resonance #engineering #processengineering #vibration #maths #python #simulation #stem

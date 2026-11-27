@@ -1,5 +1,7 @@
-Sound on. Double the wind speed and the shedding frequency doubles - an octave higher. That's why power lines and wires 'sing' in the wind (Aeolian tones).
+Double the wind, double the note. Same wire, same air, three wind speeds. At half speed the swirls leave every 246 time units; at three-quarter speed every 158; at full speed every 118. The frequency f = 1/T climbs in a straight line with the wind because f = St·U/D and St barely changes (≈ 0.17). That's the hum of power lines and the whistle of branches in a gale: Aeolian tones.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Send this to someone who's heard the wires sing.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #sound
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexshedding #aeolian #physics #engineering #maths #python #simulation #stem

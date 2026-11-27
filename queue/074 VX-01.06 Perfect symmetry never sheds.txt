@@ -1,5 +1,7 @@
-A perfectly centred cylinder never sheds in a perfect simulation - nothing breaks the symmetry. Move it one cell and you get a full vortex street. In real life, tiny disturbances do the job.
+A perfectly centred cylinder never sheds (in maths). At Re 150 a real cylinder makes a vortex street, but put it exactly in the middle of a symmetric channel and the computer has no reason to push the wake up or down, so the unstable steady wake survives forever. Shift it one cell (5% of its width) and the wobble grows like e^(σt) into a full street. Shift it five cells and it just gets there sooner: same street, St ≈ 0.17.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Real flows always have tiny disturbances, which is why real wakes always shed.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #symmetry #physics #engineering #maths #python #simulation #stem

@@ -1,5 +1,7 @@
-A pipe near the seabed: as the gap to the ground shrinks, the ground squashes the lower vortices and the shedding turns weak and one-sided. Subsea pipeline engineers care about exactly this.
+What the seabed does to a pipe's wake. The floor is a no-slip wall (u = v = 0), so it fights the swirls. Two diameters up, the pipe sheds a normal street. One diameter up, the lower swirls drag along the floor. Half a diameter up, shedding turns weak and one-sided. A quarter of a diameter up, a fast jet squirts through the gap and takes over. Subsea pipelines are designed around exactly this, because the gap changes the forces on the pipe.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for more maths you can see.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #subsea #pipeline #oilandgas
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #subsea #pipeline #offshore #engineering #maths #python #simulation #stem
