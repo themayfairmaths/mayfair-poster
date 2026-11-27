@@ -1,0 +1,9 @@
+Bending, bouncing and steering waves 🌊 Swipe for the maths behind this week's wave reels.
+
+The Doppler formula in three lines, where the Mach cone angle comes from (sin θ = 1/M), how slowing a wave bends it (n = 1/K and the lensmaker equation), why a dish must be a parabola, how timing alone steers a beam (d·sin θ = Δφ/360°·λ), the one equation behind all five plus its stability limit, and an honest look at where the grid shows through.
+
+Rendered in Python with the 2D wave equation. The Excel ripple-tank workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#waves #physics #doppler #sonicboom #optics #radar #maths #python #simulation #stem
