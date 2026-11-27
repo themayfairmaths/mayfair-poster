@@ -1,0 +1,9 @@
+The maths of one line of chaos 📈 Swipe for the numbers behind this week's logistic-map reels.
+
+Robert May's 1976 population model in one formula, when it settles (|2 − r| < 1), the exact 2-cycle, Feigenbaum's universal constant 4.669, the Lyapunov exponent that measures chaos, an exact solution at r = 4 (xₙ = sin²(2ⁿθ₀)) that explains why computers lose the plot after ~53 steps, "period three implies chaos", and a ×100 zoom that finds the whole picture again.
+
+Rendered in Python. The Excel logistic map workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#chaos #logisticmap #bifurcation #feigenbaum #maths #math #fractal #python #mathart #stem
