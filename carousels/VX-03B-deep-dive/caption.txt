@@ -1,0 +1,10 @@
+Which way does the point face? 9 slides on the triangle-angles series, all at Re = 150:
+
+1. Turning a triangle 0-60° takes it from point-first (St 0.196) to flat-first (St 0.141).
+2. The apex angle hardly matters: the back corners set the beat, until the body gets very short.
+3. Spin it fast and it sheds like a circle: the wake only feels the average shape.
+4. How we measure St, the solver underneath, what a 2D model leaves out, and where engineers use triangles.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #stem
