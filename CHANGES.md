@@ -1,5 +1,8 @@
 # Changes
 
+## 2026-11-26 (rev20261126_c)
+- Trending-music filters: skip tracks whose title/artist mention Christmas/holiday, religious or slow/sad keywords, tracks shorter than 20 s, and anything listed in music_veto.txt (title, artist or audio_id, one per line). The audio test mode now shows which track would be picked next and why each one is skipped.
+
 ## 2026-11-26 (rev20261126_b)
 - Instagram trending music (Instagram Audio API). New mode `audio` lists today's trending music and saves it to audio_trending.json without posting. With the repository variable USE_IG_AUDIO = 1, every reel gets the first trending track not used in the last 30 posts (audio_volume 100, the video's own music muted). If Instagram refuses (for example because no Facebook Page is linked), the reel posts with its own music, so posting never breaks. The track used is logged in posted.csv (columns 5-6).
 
