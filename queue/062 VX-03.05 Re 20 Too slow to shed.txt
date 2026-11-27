@@ -1,0 +1,7 @@
+Re 20: three shapes, zero swirls. The Reynolds number Re = UD/ν compares inertia with viscosity. At Re 20 viscosity wins: behind a triangle, a circle and a square the flow forms a still pair of eddies and nothing sheds. Boundaries: uniform flow in at the left, a free outlet at the right, and no slip on the body, where Thom's formula sets the wall spin ω = −2Σ(ψ_next − ψ_wall)/h². The probe behind each shape reads almost exactly zero.
+
+Part 1 of 5 in the Re ladder. Follow for part 2: the wake wakes up.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #reynoldsnumber #physics #engineering #maths #python #simulation #stem #aerodynamics

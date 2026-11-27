@@ -1,0 +1,7 @@
+Re 300: inertia wins. Same boundaries, only the viscosity changed (ν = UD/Re), so inertia is now 300× stronger. Swirls are bigger and punchier. Across the ladder the triangle's St climbs from 0.14 to 0.21 and the circle's from 0.11 to 0.19, but the square sits near 0.14 the whole way because its corners pin where the flow lets go. Caveat: real wakes turn 3D above Re ≈ 190; this is a 2D model.
+
+The full Re ladder in 5 parts. Save it and follow for the deep dive tomorrow.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #reynoldsnumber #vortexstreet #physics #engineering #maths #python #simulation #stem

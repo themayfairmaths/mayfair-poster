@@ -1,0 +1,7 @@
+Re 100: a clean vortex street. Swirls peel off alternate sides, so the probe swings + then −. One full swing is the period T, and the Strouhal number St = fD/U = D/(UT) measures the beat. Triangle: T ≈ 112, St 0.179. Circle: T ≈ 128, St 0.156. Square: T ≈ 149, St 0.134. Same speed, same viscosity, three rhythms: the narrower the wake, the faster the beat.
+
+Part 3 of 5. Follow for part 4: which shape sings highest.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #physics #engineering #maths #python #simulation #stem

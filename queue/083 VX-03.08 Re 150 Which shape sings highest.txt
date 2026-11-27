@@ -1,0 +1,7 @@
+Re 150: which shape sings highest? Where the flow lets go sets how wide the wake is. The triangle and the square let go at their sharp back corners; on the circle the letting-go point slides round the curve. Result: triangle St 0.196, circle 0.169, square 0.139. The frequency is f = St·U/D, so water at 1 m/s past a 2 cm rod sheds at about 8.4 Hz. It's why wires hum in the wind and chimneys get spiral fins.
+
+Send this to someone who's heard power lines hum.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexshedding #strouhal #physics #engineering #maths #python #simulation #stem

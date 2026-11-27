@@ -1,0 +1,7 @@
+Re 50: which wake wakes up first? Same three shapes, a bit faster. Now the steady wake is unstable: a tiny wobble grows like e^(σt) until it saturates (a Hopf bifurcation). The triangle's sharp back corners make it take off first. A circle only starts shedding above Re ≈ 47, so at 50 it barely moves, and the square is somewhere in between. Watch the probe traces grow.
+
+Part 2 of 5. Follow for part 3: a clean vortex street.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #reynoldsnumber #vortexstreet #physics #engineering #maths #python #simulation #stem
