@@ -1,5 +1,7 @@
-Same box, faster lid (Re 400). The main vortex moves towards the centre and a corner eddy grows bottom-right.
+Same box, lid 4× faster relative to viscosity: Re = UL/ν = 400. Inertia now carries the swirl deeper, so the main vortex drifts down towards the centre and the bottom-right eddy grows. It takes about 10 lid lengths to settle. Against the Ghia et al. (1982) benchmark: vortex strength 0.1141 vs 0.1139, centre-line velocity within 0.015 U.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 4. Follow for part 3: Re 1000.
 
-#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, 96 × 96 grid). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #liddrivencavity #navierstokes #reynoldsnumber #engineering #maths #python #simulation #stem

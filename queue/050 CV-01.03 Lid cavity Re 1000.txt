@@ -1,5 +1,7 @@
-Same box, even faster lid (Re 1000). A big round vortex and two counter-rotating corner eddies (red).
+Re 1000: a strong shear layer peels off the lid, both bottom corners grow eddies, and the flow needs about 25 lid lengths to settle. Here our 96 × 96 grid shows its limits: the vortex comes out 4% stronger than the benchmark (0.1229 vs 0.1179 on Ghia's 129 × 129 grid). Thin layers need finer grids. That's the honest part of CFD: always check against something you trust.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 4. Follow for part 4: all three side by side.
 
-#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, 96 × 96 grid). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #liddrivencavity #navierstokes #reynoldsnumber #engineering #maths #python #simulation #stem

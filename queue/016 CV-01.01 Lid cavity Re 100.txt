@@ -1,5 +1,7 @@
-A box of fluid with a sliding lid (Re 100). The lid drags the fluid round into one big vortex, sitting up near the top.
+A square box full of fluid. The lid slides right; the other three walls stay still. Start the lid and viscosity drags the fluid round into one big vortex, with two tiny counter-rotating eddies in the bottom corners (red). It settles after about 5 lid lengths. Then the test: Ghia, Ghia and Shin (1982) is the benchmark every CFD code is checked against. Our 96 × 96 solver gets a vortex strength of 0.1036 against their 0.1034, and the centre-line velocity lands within 0.01 U everywhere.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 4. Follow for part 2: Re 400.
 
-#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, 96 × 96 grid). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #liddrivencavity #navierstokes #reynoldsnumber #engineering #maths #python #simulation #stem

@@ -1,5 +1,7 @@
-Same box. Faster lid. The classic CFD benchmark - and this 96 × 96 grid matches the published numbers (Ghia 1982): vortex strength 0.104 / 0.114 / 0.123 vs 0.103 / 0.114 / 0.118.
+Same box, same fluid, faster lid. At Re 100 the velocity along the centre line is a gentle S; at Re 400 it sharpens and the vortex sinks towards the middle; at Re 1000 thin layers hug every wall and the core spins almost like a solid body. Dots are the Ghia et al. (1982) benchmark, lines are our solver. One number, Re = UL/ν, reshapes the whole flow.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 4.
 
-#cfd #fluidmechanics #liddrivencavity #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, 96 × 96 grid). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #liddrivencavity #navierstokes #reynoldsnumber #engineering #maths #python #simulation #stem
