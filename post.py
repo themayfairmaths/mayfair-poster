@@ -1,4 +1,5 @@
-"""CHANGES 2026-11-27 (b): reels with music now sent by public video_url instead of resumable upload (music was still ignored).
+"""CHANGES 2026-11-27 (c): music filter now also skips tracks with swear words in the title (first working test picked one).
+CHANGES 2026-11-27 (b): reels with music now sent by public video_url instead of resumable upload (music was still ignored).
 CHANGES 2026-11-27: trending music now via a Facebook Login token; video_volume 0 -> 1 (Meta only accepts 1-100, so 0 may have made Instagram drop the song).
 Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
 Runs on GitHub Actions. Secrets: IG_TOKEN (system-user token), IG_USER_ID (Instagram account ID).
@@ -75,6 +76,7 @@ def trending_audio(query=None):
 BLOCK = ['christmas', 'xmas', 'santa', 'jingle', 'carol', 'holiday', 'noel', 'navidad', 'feliz', 'snow', 'wonderful time', 'mistletoe', 'sleigh', 'reindeer',
          'gurbani', 'shabad', 'nanak', 'gurpurab', 'waheguru', 'kirtan', 'bhajan', 'aarti', 'mantra', 'worship', 'hymn', 'gospel', 'praise', 'psalm', 'prayer',
          'jesus', 'lord', 'allah', 'quran', 'naat', 'nasheed', 'devotional', 'krishna', 'shiva', 'ganesh', 'hallelujah', 'amen',
+         'shit', 'fuck', 'bitch', 'nigga', 'pussy', 'explicit', 'motherf',
          'slowed', 'reverb', 'sad', 'lullaby', 'sleep', 'ballad', 'acoustic', 'piano version', 'funeral', 'cry']
 def skip_reason(a, used, veto):
     t = f"{a.get('title', '')} {a.get('display_artist', '')}".lower()
