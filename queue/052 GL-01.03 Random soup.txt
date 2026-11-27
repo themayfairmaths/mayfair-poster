@@ -1,5 +1,7 @@
-Fill the grid with random cells and apply the rules. Chaos burns for hundreds of generations, then settles into blocks, beehives, blinkers and the odd glider sailing off. Order from simple rules.
+Fill the workbook's 128 × 128 grid 30% full at random (4,934 cells) and apply the rules. By generation 1,000 only 581 are left: the "ash" of blinkers, blocks, beehives, boats and the odd glider. Sweep the starting density and the answer barely changes: anywhere from 10% to 65% full, about 5% of the grid is alive at step 600. Too sparse and cells starve; too dense and they overcrowd.
 
-Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 3. Which start would you try?
 
-#gameoflife #conway #cellularautomata #maths #excel #computerscience #emergence
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #emergence #maths #computerscience #python #mathart #stem

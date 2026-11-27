@@ -1,5 +1,7 @@
-Same three rules, three tiny starts. The glider (5 cells) just walks diagonally. The R-pentomino (also 5 cells) explodes into chaos for over 1,000 generations. The acorn (7 cells) grows into a whole city.
+Same three rules, three tiny starts. Diehard (7 cells) grows to 40 cells and vanishes at exactly generation 130. The R-pentomino (5 cells) churns for 1,103 generations, throws out 6 gliders and settles at 116 cells. The acorn (7 cells) keeps changing for 5,206 generations and ends with 633 cells.
 
-Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 3. Follow for part 3: random soup.
 
-#gameoflife #conway #cellularautomata #maths #excel #computerscience #emergence
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #emergence #maths #computerscience #python #mathart #stem

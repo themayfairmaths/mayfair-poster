@@ -1,5 +1,7 @@
-Conway's Game of Life has three rules: a dead cell with exactly 3 live neighbours is born, a live cell with 2 or 3 survives, everything else dies. From those rules comes the Gosper glider gun (1970): a machine that fires a new glider every 30 generations, for ever.
+Conway's Game of Life has three rules: a dead cell with exactly 3 live neighbours is born, a live cell with 2 or 3 survives, everything else dies. A glider (5 cells) repeats its shape every 4 generations, one cell further on. The Gosper glider gun (1970) rebuilds itself every 30 generations and fires a new glider: 36 cells + 5 per glider, for ever. It won Conway's $50 prize for a pattern that grows without limit.
 
-Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 3. Follow for part 2: three tiny starts.
 
-#gameoflife #conway #cellularautomata #maths #excel #computerscience #emergence
+Rendered in Python with exactly the same rules as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#gameoflife #conway #cellularautomata #emergence #maths #computerscience #python #mathart #stem
