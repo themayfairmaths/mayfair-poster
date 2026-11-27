@@ -1,0 +1,9 @@
+How to design a pattern 🐆 Swipe for the maths behind this week's reaction-diffusion reels.
+
+One formula per cell, and why the pattern chemical must spread slower than the food (break that rule and you get nothing). How to read the F–k parameter map, why the same F can give different patterns depending on history, how fast coral, spots and mazes heal after being wiped, and why the starting shape is forgotten but the recipe is not.
+
+Rendered in Python with the same Gray-Scott formula as our Excel workbook. The pattern workbook is coming soon.
+
+Comment a word and I'll grow it in a future reel. Save this and follow for more maths you can see.
+
+#turingpatterns #reactiondiffusion #grayscott #maths #math #biology #chemistry #python #mathart #stem
