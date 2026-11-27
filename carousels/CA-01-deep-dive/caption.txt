@@ -1,0 +1,13 @@
+8 bits that compute: the maths of elementary cellular automata, in 10 slides.
+
+1. How a rule number (0 to 255) becomes a lookup table.
+2. Rule 90 is Pascal's triangle mod 2.
+3. Rule 30 behaves like a coin, and nobody has proved why.
+4. Changes spread at most one cell per step: a light cone.
+5. Mirror and colour swaps cut 256 rules to 88 families.
+6. Rule 184 is a traffic model with a real fundamental diagram.
+7. Wolfram's four classes, and how rule 110 can compute.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#cellularautomata #rule30 #rule110 #wolfram #emergence #maths #computerscience #python #stem
