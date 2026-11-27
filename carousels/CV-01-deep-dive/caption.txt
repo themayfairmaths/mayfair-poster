@@ -1,0 +1,11 @@
+Inside a lid-driven cavity: the box every CFD code has to pass. 10 slides:
+
+1. The setup: three still walls, one sliding lid, Re = UL/ν.
+2. The equations: vorticity, streamfunction and Thom's wall formula.
+3. Our solver against Ghia, Ghia and Shin (1982): within about 1% at Re 100 and 400.
+4. How long the flow takes to settle, and the eddies hiding in the corners.
+5. Our error out in the open: 4% at Re 1000 on a 96 × 96 grid, and how to fix it.
+
+Rendered in Python (vorticity–streamfunction solver). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #liddrivencavity #navierstokes #benchmark #engineering #maths #python #simulation #stem
