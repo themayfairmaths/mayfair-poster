@@ -1,5 +1,7 @@
-Round off the corners of a square and the wake changes completely. Shedding speeds up from St 0.139 to 0.169 as it becomes a circle - one reason tall buildings soften their corners.
+Round a square's corners off bit by bit, from sharp (r = 0) to a full circle (r = D/2). The flow hugs a curved corner a little longer before letting go, so the wake narrows and the beat quickens: St = 0.134, 0.144, 0.149, 0.156. That's why rounded building corners and smooth cables shed differently from sharp ones.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 5. Follow for part 5: stretching the square.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #architecture #windengineering
+Rendered in Python (vorticity–streamfunction solver, Re = 100). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

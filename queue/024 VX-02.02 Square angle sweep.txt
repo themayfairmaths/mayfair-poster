@@ -1,5 +1,7 @@
-Turning a square 5° at a time, from 0° to 45°. Watch the vortex street go lopsided, then even out again as it becomes a diamond.
+Turn a square 0°, 15°, 30°, 45° and measure the shedding beat each time. The width the flow sees is W = D(cos θ + sin θ): 20, 25.5, 27.3, 28.3 cells. Measured on the side D the Strouhal number falls: 0.134, 0.130, 0.127, 0.123. Measured on W it rises to 0.174. Same data, different answer: always ask which width a Strouhal number uses.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 5. Follow for part 3: what if it spins?
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 100). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

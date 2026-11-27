@@ -1,7 +1,7 @@
-Same square. Turn it 45°.
+Same square, turned 45°. Flat face first, the flow lets go at the front corners: St = 0.134. Point first (a diamond), the body looks 28.3 cells wide instead of 20, the swirls are pushed further apart and the beat slows to St = 0.123. A circle of the same width, with no corners at all, sheds fastest: St = 0.156. All at Re = 100, same grid, same probe.
 
-Flat face first, the flow lets go at the front corners. Point first, it splits and peels off the sides. The diamond is wider to the flow and sheds a little slower (St 0.131 vs 0.139).
+Part 1 of 5. Follow for part 2: turning it 15° at a time.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Rendered in Python (vorticity–streamfunction solver, Re = 100). Excel workbook coming soon - follow so you don't miss it.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

@@ -1,5 +1,7 @@
-Stretch a square along the flow: plate, square, block, bridge deck. The longer the body, the slower and bigger the vortices off the tail.
+Keep the front 20 cells tall and stretch the body along the flow: L/D = 0.5, 1, 2, 3. The longer the body, the further the separated layers travel before they roll up, so the swirls form later, further apart and slower: St = 0.140, 0.134, 0.126, 0.116. Bridge decks and long buildings are checked for exactly this.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 5 of 5. That's the square series: corners, angle and length all change the beat.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics #civilengineering #bridges
+Rendered in Python (vorticity–streamfunction solver, Re = 100). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

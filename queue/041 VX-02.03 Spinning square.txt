@@ -1,5 +1,7 @@
-What happens to a vortex street when the square slowly turns? The wake follows the corners round, and a faster turn makes the street wobble as each corner comes past. Every 90° the square looks the same again.
+Spin the square and the wake has two rhythms to deal with. Still: a swirl leaves every ~1,500 steps, St = 0.134. Spin slowly, a quarter turn every 1000 steps, and a new corner arrives about as often as a swirl leaves: the two rhythms tangle and the beat goes uneven. Spin fast, two turns every 1000 steps, and corners flash past 12× faster than the swirls: the wake only feels the average shape and settles down again. (Here the body cells rotate; the surface itself doesn't drag the fluid.)
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 5. Follow for part 4: rounding the corners off.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 100). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem
