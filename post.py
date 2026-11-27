@@ -1,4 +1,5 @@
-"""Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
+"""CHANGES 2026-11-27: trending music now via a Facebook Login token; video_volume 0 -> 1 (Meta only accepts 1-100, so 0 may have made Instagram drop the song).
+Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
 Runs on GitHub Actions. Secrets: IG_TOKEN (system-user token), IG_USER_ID (Instagram account ID).
 Usage: python post.py check   -> verify token, account and publishing limit (posts nothing)
        python post.py post    -> post ONE reel: the next part of today's block (hourly 08:00-15:00 Perth, one block per day)
@@ -115,7 +116,7 @@ def post_one(mp4):
     if USE_IG_AUDIO:
         try:
             track = pick_audio()
-            if track: p['audio_configuration'] = json.dumps({'audio_id': track['audio_id'], 'audio_volume': 100, 'video_volume': 0})
+            if track: p['audio_configuration'] = json.dumps({'audio_id': track['audio_id'], 'audio_volume': 100, 'video_volume': 1})
         except Exception as e: print('Trending audio unavailable, using the video\'s own music:', str(e)[:300]); track = None
     try: c = req('POST', f'{G}/{IGID}/media', p)
     except RuntimeError as e:
