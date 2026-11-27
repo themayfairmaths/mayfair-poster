@@ -1,156 +1,182 @@
 {
  "ok": true,
  "count": 25,
+ "next_pick": "Huss Huss Huss - Ellea",
  "tracks": [
   {
-   "audio_id": "1924822242216699",
-   "title": "Crazy For You",
-   "display_artist": "Lana Del Rey",
-   "duration_in_ms": 223683
-  },
-  {
-   "audio_id": "1134460562715470",
+   "audio_id": "1474965744780918",
    "title": "Huss Huss Huss",
-   "display_artist": "Virexo Aelvix",
-   "duration_in_ms": 75189
-  },
-  {
-   "audio_id": "1619590552945205",
-   "title": "Think I'm going dumb",
-   "display_artist": "ACE aqugounk",
-   "duration_in_ms": 128350
-  },
-  {
-   "audio_id": "1357192349720587",
-   "title": "Draw You Out",
-   "display_artist": "Noah Kahan, The Hunger Games",
-   "duration_in_ms": 255984
-  },
-  {
-   "audio_id": "552360985884236",
-   "title": "Vice City",
-   "display_artist": "Neon Dust",
-   "duration_in_ms": 185714
+   "display_artist": "Ellea",
+   "duration_in_ms": 73721,
+   "skip": "ok"
   },
   {
    "audio_id": "1131276776292967",
    "title": "Yellow",
    "display_artist": "Coldplay",
-   "duration_in_ms": 270426
+   "duration_in_ms": 270426,
+   "skip": "ok"
   },
   {
-   "audio_id": "1500358294806818",
-   "title": "Young Folks",
-   "display_artist": "NCWU Spectrum",
-   "duration_in_ms": 282043
-  },
-  {
-   "audio_id": "1382788023218400",
-   "title": "NON MI INNAMORERÓ (Brazilian Remix)",
-   "display_artist": "Pucho, Gordinho Bolado, Mia, Cristy",
-   "duration_in_ms": 139764
-  },
-  {
-   "audio_id": "1669192674919295",
-   "title": "two faced",
-   "display_artist": "purc",
-   "duration_in_ms": 356758
-  },
-  {
-   "audio_id": "2519800484733231",
-   "title": "It's Beginning to Look a Lot like Christmas",
-   "display_artist": "Michael Bublé",
-   "duration_in_ms": 207199
-  },
-  {
-   "audio_id": "1124014413002269",
-   "title": "SatGur Nanak Pargateya | Gurubani Shabad",
-   "display_artist": "GurTone",
-   "duration_in_ms": 237599
+   "audio_id": "1924822242216699",
+   "title": "Crazy For You",
+   "display_artist": "Lana Del Rey",
+   "duration_in_ms": 223683,
+   "skip": "on music_veto.txt"
   },
   {
    "audio_id": "1961393680621601",
    "title": "Aar Nanak Paar Nanak",
    "display_artist": "Diljit Dosanjh",
-   "duration_in_ms": 278785
-  },
-  {
-   "audio_id": "1637651271422090",
-   "title": "Rinse & Repeat (Again)",
-   "display_artist": "Kolter, Riton, Kah-Lo",
-   "duration_in_ms": 160909
-  },
-  {
-   "audio_id": "2029452337168654",
-   "title": "Rockin' Around The Christmas Tree",
-   "display_artist": "Brenda Lee",
-   "duration_in_ms": 126266
-  },
-  {
-   "audio_id": "4335800886709917",
-   "title": "November Vibes",
-   "display_artist": "Luna Jason Hart",
-   "duration_in_ms": 176760
-  },
-  {
-   "audio_id": "1666155628402531",
-   "title": "Sand Drawing",
-   "display_artist": "Judah Earl",
-   "duration_in_ms": 208851
-  },
-  {
-   "audio_id": "2326671388101182",
-   "title": "03' Bonnie & Clyde (feat. Beyoncé Knowles)",
-   "display_artist": "JAŸ-Z",
-   "duration_in_ms": 205520
-  },
-  {
-   "audio_id": "1479693983289050",
-   "title": "Living in the Dark",
-   "display_artist": "Myuu",
-   "duration_in_ms": 150887
-  },
-  {
-   "audio_id": "996104367203203",
-   "title": "Don't Stop the Party (feat. TJR)",
-   "display_artist": "Pitbull",
-   "duration_in_ms": 206120
-  },
-  {
-   "audio_id": "1122803287891766",
-   "title": "Hawaiian Roller Coaster Ride (From  \"Lilo & Stitch\"/Soundtrack Version)",
-   "display_artist": "Mark Keali'i Ho'omalu, Kamehameha Schools Children's Chorus",
-   "duration_in_ms": 208226
-  },
-  {
-   "audio_id": "183403658964987",
-   "title": "Last Christmas (Remastered)",
-   "display_artist": "Wham!",
-   "duration_in_ms": 267160
-  },
-  {
-   "audio_id": "354168475074858",
-   "title": "It's the Most Wonderful Time of the Year",
-   "display_artist": "Andy Williams",
-   "duration_in_ms": 151000
+   "duration_in_ms": 278785,
+   "skip": "filtered (nanak)"
   },
   {
    "audio_id": "1581306749288707",
    "title": "Gurpurab",
    "display_artist": "Ranjit Bawa",
-   "duration_in_ms": 298324
+   "duration_in_ms": 298324,
+   "skip": "filtered (gurpurab)"
+  },
+  {
+   "audio_id": "1681688443632597",
+   "title": "Ishqa (From \"Dar-E-Nijaat\")",
+   "display_artist": "Naveed Nashad, Osaf Fateh Ali Khan, Nabeel Shaukat Ali",
+   "duration_in_ms": 251818,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "29982976461385866",
+   "title": "Burn This Shit Down",
+   "display_artist": "Travis Scott",
+   "duration_in_ms": 260000,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "552360985884236",
+   "title": "Vice City",
+   "display_artist": "Neon Dust",
+   "duration_in_ms": 185714,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1637651271422090",
+   "title": "Rinse & Repeat (Again)",
+   "display_artist": "Kolter, Riton, Kah-Lo",
+   "duration_in_ms": 160909,
+   "skip": "ok"
   },
   {
    "audio_id": "2018351915690371",
    "title": "Nanak Aadh Jugaadh Jiyo",
    "display_artist": "Diljit Dosanjh",
-   "duration_in_ms": 279207
+   "duration_in_ms": 279207,
+   "skip": "filtered (nanak)"
   },
   {
-   "audio_id": "4592557824320671",
-   "title": "FA FA FA (From \"O.M: Operation Mole\")",
-   "display_artist": "Sai Abhyankkar, Thamizh Aadhavan",
-   "duration_in_ms": 176220
+   "audio_id": "1124014413002269",
+   "title": "SatGur Nanak Pargateya | Gurubani Shabad",
+   "display_artist": "GurTone",
+   "duration_in_ms": 237599,
+   "skip": "filtered (shabad)"
+  },
+  {
+   "audio_id": "2216589442049555",
+   "title": "Last Christmas (Instrumental)",
+   "display_artist": "Wham!",
+   "duration_in_ms": 265573,
+   "skip": "filtered (christmas)"
+  },
+  {
+   "audio_id": "1619590552945205",
+   "title": "Think I'm going dumb",
+   "display_artist": "ACE aqugounk",
+   "duration_in_ms": 128350,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1725697815744706",
+   "title": "Run Away With Me",
+   "display_artist": "Carly Rae Jepsen",
+   "duration_in_ms": 251327,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1382788023218400",
+   "title": "NON MI INNAMORERÓ (Brazilian Remix)",
+   "display_artist": "Pucho, Gordinho Bolado, Mia, Cristy",
+   "duration_in_ms": 139764,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1357192349720587",
+   "title": "Draw You Out",
+   "display_artist": "Noah Kahan, The Hunger Games",
+   "duration_in_ms": 255984,
+   "skip": "on music_veto.txt"
+  },
+  {
+   "audio_id": "183403658964987",
+   "title": "Last Christmas (Remastered)",
+   "display_artist": "Wham!",
+   "duration_in_ms": 267160,
+   "skip": "filtered (christmas)"
+  },
+  {
+   "audio_id": "671049371059694",
+   "title": "Wings (feat. sped up nightcore) [Sped Up Version]",
+   "display_artist": "Birdy",
+   "duration_in_ms": 211846,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1057249653808076",
+   "title": "Sand Drawing (Slowed + Reverb)",
+   "display_artist": "Judah Earl",
+   "duration_in_ms": 221324,
+   "skip": "filtered (slowed)"
+  },
+  {
+   "audio_id": "1500358294806818",
+   "title": "Young Folks",
+   "display_artist": "NCWU Spectrum",
+   "duration_in_ms": 282043,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1479693983289050",
+   "title": "Living in the Dark",
+   "display_artist": "Myuu",
+   "duration_in_ms": 150887,
+   "skip": "on music_veto.txt"
+  },
+  {
+   "audio_id": "354168475074858",
+   "title": "It's the Most Wonderful Time of the Year",
+   "display_artist": "Andy Williams",
+   "duration_in_ms": 151000,
+   "skip": "filtered (wonderful time)"
+  },
+  {
+   "audio_id": "2326671388101182",
+   "title": "03' Bonnie & Clyde (feat. Beyoncé Knowles)",
+   "display_artist": "JAŸ-Z",
+   "duration_in_ms": 205520,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "1958989035018026",
+   "title": "Chills",
+   "display_artist": "1NOVYX",
+   "duration_in_ms": 96013,
+   "skip": "ok"
+  },
+  {
+   "audio_id": "203193731254034",
+   "title": "All I Want For Christmas Is You (Magical Christmas Mix)",
+   "display_artist": "Mariah Carey",
+   "duration_in_ms": 269869,
+   "skip": "filtered (christmas)"
   }
  ]
 }
