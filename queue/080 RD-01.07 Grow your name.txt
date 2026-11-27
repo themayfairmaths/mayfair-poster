@@ -1,5 +1,7 @@
-Growing MAYFAIR MATH: seed the grid with letters and let reaction-diffusion take over. Comment a word and I'll grow it next.
+Same letters, three recipes. We seed the grid with the word MATH (u = 0.5, v = 0.25 inside the letters, u = 1, v = 0 everywhere else) and run the Gray-Scott equations with three different (F, k) pairs. Coral (F 0.0545, k 0.062): the letters grow and branch. Spots (0.030, 0.062): they break into dots that split and spread. Maze (0.029, 0.057): the strokes stretch into stripes. The start is forgotten; the recipe decides.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Comment a word and I'll grow it in a future reel.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#turingpatterns #reactiondiffusion #grayscott #maths #math #mathart #python #generativeart #stem #science

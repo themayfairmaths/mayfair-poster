@@ -1,5 +1,7 @@
-Turning up the feed rate while it runs: the spots stretch, join up and turn into worms.
+Spots melt into worms (and back). Same Gray-Scott equations, but the recipe changes a tiny bit every step. Turn the feed F up from 0.030 to 0.055 and spots stretch, touch and join into worms. Turn it down and coral pinches off into spots. Turn the kill rate k up and the maze thins out to fewer and fewer spots. The pattern follows the numbers live, and it remembers where it came from.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for part 4: self-healing patterns.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#turingpatterns #reactiondiffusion #grayscott #maths #math #mathart #python #generativeart #stem #science

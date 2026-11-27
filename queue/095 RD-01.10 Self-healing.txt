@@ -1,5 +1,7 @@
-Wipe out the middle of the pattern and watch it grow back. Reaction-diffusion patterns heal themselves.
+Wipe out the middle. Watch it heal. Partway through the run we set u = 1, v = 0 in the centre: a clean wound. Nothing tells the edge where the hole is; diffusion just carries v inwards and uv² multiplies it. Coral is back to 97% cover about 785 steps later, spots about 670, the maze about 440. The new patch is different in detail but the same kind of pattern: no blueprint, just local rules.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Send this to someone who likes self-repairing things.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#turingpatterns #reactiondiffusion #grayscott #maths #math #mathart #python #generativeart #stem #science

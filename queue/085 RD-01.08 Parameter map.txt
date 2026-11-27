@@ -1,5 +1,7 @@
-Every pattern in one picture: the feed rate F changes left to right and the kill rate k changes bottom to top. Spots, stripes and nothing at all, side by side.
+Every pattern in one picture. Here every cell gets its own recipe: the feed rate F rises left → right and the kill rate k rises bottom → top. Zoomed out, most of the map is boring: v starves (dark) or floods (flat yellow). Zoom in and spots, worms and holes sit side by side, blending at the borders. Zoom again and a change of F by just 0.01 flips spots into stripes. That thin band is where all the interesting shapes live.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Save this as your map of patterns.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#turingpatterns #reactiondiffusion #grayscott #maths #math #mathart #python #generativeart #stem #science
