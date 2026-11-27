@@ -1,5 +1,7 @@
-Mach 0.5: the waves escape ahead of the source. Mach 1: they pile up into a wall - the sound barrier. Mach 1.5: the source outruns its own waves and they form a cone. That cone sweeping over the ground is the sonic boom. Cone angle: sin θ = 1/Mach.
+Break the sound barrier. At Mach 0.5 every ring outruns the source. At Mach 1 the source keeps pace with its own rings and they pile up at the nose into one wall: the "barrier". At Mach 1.5 it escapes its own rings and their edges line up on a cone with sin θ = 1/M = 0.67, θ = 41.8°. At Mach 2 (Concorde's cruise) the cone narrows to 30°. The boom you hear is that cone sweeping over the ground.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Save this one for the cone formula.
 
-#waves #physics #maths #engineering #excel #wavequation #science #aerospace #aviation
+Rendered in Python (2D wave equation). Excel workbook coming soon - follow so you don't miss it.
+
+#sonicboom #mach #waves #physics #aerospace #maths #math #python #simulation #stem

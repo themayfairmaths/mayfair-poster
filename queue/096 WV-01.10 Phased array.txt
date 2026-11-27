@@ -1,5 +1,7 @@
-Eight wave makers in a line, nothing moves. Delay each one a little more than the last and the beam swings round: 0° delay straight ahead, 60° → 19.5°, 120° → 41.8°. This is how 5G masts and modern radars steer their beams.
+Steer a beam without moving anything. Eight wave sources half a wavelength apart. All in step: the beam goes straight ahead. Delay each one by Δφ = 60° behind its neighbour and the beam tilts to sin θ = (Δφ/360°)·λ/d = 1/3, θ = 19.5°. Δφ = 120°: θ = 41.8°. Then change Δφ live from −120° to +120° and the beam sweeps across all four listening points. No moving parts, just timing: how 5G masts and modern radar steer.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Send this to someone who works in RF.
 
-#waves #physics #maths #engineering #excel #wavequation #science #radar #5g #electricalengineering
+Rendered in Python (2D wave equation). Excel workbook coming soon - follow so you don't miss it.
+
+#phasedarray #radar #5g #waves #physics #engineering #maths #python #simulation #stem

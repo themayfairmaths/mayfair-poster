@@ -1,5 +1,7 @@
-Move the wave maker and the rings bunch up in front and stretch out behind. In front: shorter wavelength, higher pitch. Behind: longer, lower. That's why a siren drops in pitch as it passes.
+Why a siren changes pitch. A source making ripples at a steady rate, standing still: evenly spaced rings, and listeners in front (F) and behind (B) hear the same pitch. Move it at half the wave speed and each new ring starts further ahead: squashed in front, stretched behind. The gaps become λ(1 − M) and λ(1 + M), so the pitch is f/(1 − M) = 2× in front and f/(1 + M) = ⅔ behind. At M = 0.8 the front pitch is 5×.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for part 2: break the sound barrier.
 
-#waves #physics #maths #engineering #excel #wavequation #science #sound #acoustics
+Rendered in Python (2D wave equation). Excel workbook coming soon - follow so you don't miss it.
+
+#doppler #waves #physics #sound #maths #math #python #simulation #stem #science

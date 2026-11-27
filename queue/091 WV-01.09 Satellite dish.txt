@@ -1,5 +1,7 @@
-A flat wall bounces a wave straight back. A parabolic dish sends every reflection to one point - the focus. That's where the receiver goes on a satellite dish or radio telescope.
+Why dishes are parabolas. A flat wall just bounces straight waves back. Curve it into a parabola x = x_v − y²/4f and every path from far away, to the dish, to the focus has the same length, so all the reflections arrive in step and pile up into one bright spot, f = 30 cells out. Make the dish deeper (f = 15) and the focus moves closer. Satellite TV, radio telescopes and whisper dishes all put the receiver right there.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Follow for more maths you can see.
 
-#waves #physics #maths #engineering #excel #wavequation #science #antenna #radio
+Rendered in Python (2D wave equation). Excel workbook coming soon - follow so you don't miss it.
+
+#parabola #satellitedish #waves #physics #optics #maths #math #python #simulation #stem

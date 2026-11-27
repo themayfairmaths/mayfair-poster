@@ -1,5 +1,7 @@
-Waves travel slower inside the lens (70% speed). The thick middle holds the wave back the most, so the crests bend round and meet at a focus - exactly how a glass lens focuses light.
+Focus a wave with maths. Straight crests pass a lens where the wave speed drops to K·c. The lens is thickest in the middle, so the middle is held back most and the crests curve towards a focus, exactly like glass with refractive index n = 1/K. Make the glass slower (K = 0.5, n = 2) and the lensmaker's equation 1/f = (n − 1)(1/R₁ + 1/R₂) says the focus moves about 2× closer. That's what your glasses do.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Tag someone who wears glasses.
 
-#waves #physics #maths #engineering #excel #wavequation #science #optics
+Rendered in Python (2D wave equation). Excel workbook coming soon - follow so you don't miss it.
+
+#optics #lens #waves #physics #refraction #maths #math #python #simulation #stem
