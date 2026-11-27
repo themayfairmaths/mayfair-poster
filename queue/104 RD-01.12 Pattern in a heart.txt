@@ -1,5 +1,7 @@
-Spots growing inside a heart - the curve (x² + y² − 1)³ = x²y³. The pattern only lives inside the shape.
+Hold u = 1, v = 0 outside the heart curve (x² + y² − 1)³ = x²y³ and the Gray-Scott pattern can only live inside it. Spots split until the heart is full, stripes bend to fit the curve, and coral traces the outline with a clear gap all round. Change the boundary and the pattern follows it.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 3. Follow for part 3: Turing's trick.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #maths #generativeart #patterns #chemistry #biology #python #stem

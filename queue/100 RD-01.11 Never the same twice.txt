@@ -1,5 +1,7 @@
-Same two numbers, four different random seeds, four different mazes. Like fingerprints: same rules, never identical.
+Same equations, same two numbers (F = 0.029, k = 0.057), three different random starts. Every run grows a maze with the same stripe spacing (about 14 cells) and the same share lit (42.4%, 42.5%, 42.3%), yet about half the cells disagree between any two runs. The rule fixes the type of pattern; the start fixes the details. Like fingerprints and zebra stripes.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 3. Follow for part 2: a pattern in a heart.
 
-#reactiondiffusion #turingpatterns #math #maths #generativeart #excel #physics #chemistry #patterns
+Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Workbook coming soon - follow so you don't miss it.
+
+#reactiondiffusion #turingpatterns #maths #generativeart #patterns #chemistry #biology #python #stem
