@@ -1,0 +1,9 @@
+One number runs the wake. Swipe for the maths behind the Re ladder 🌀
+
+What the Reynolds number is (from bacteria to airliners), the two equations we solve, the boundary conditions at the inlet, outlet, walls and body, how a wobble grows exponentially at Re 50, the Strouhal number of a triangle, a circle and a square at every Re, and the probe's frequency spectrum, with honest caveats about the 2D model.
+
+Rendered in Python with a vorticity–streamfunction solver. The Excel vortex workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#cfd #fluiddynamics #reynoldsnumber #vortexstreet #strouhal #physics #engineering #maths #python #stem
