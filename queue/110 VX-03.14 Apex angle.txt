@@ -1,5 +1,7 @@
-Sharpen a triangle from a blunt 120° to a 30° needle. Blunter (and shorter) means faster shedding.
+Keep the back 20 cells wide and change the point: a 30° needle, the 60° equilateral, a blunt 90°, a very blunt 120°. The flow lets go at the back corners in every case, so the beat hardly changes (0.192, 0.196, 0.191) until the body gets really short: the 120° wedge is only 6 cells long and sheds fastest, St = 0.225. The back corners set the beat.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 4 of 4. That's the triangle-angles series.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 150). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

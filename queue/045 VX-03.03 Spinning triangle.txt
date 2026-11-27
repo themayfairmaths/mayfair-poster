@@ -1,5 +1,7 @@
-A slowly turning triangle: as it goes from point-first to flat-first, the street slows down and speeds up again. Spin it faster and each corner whips a vortex off as it passes. Every 120° it looks the same again.
+Spin the triangle. Still, a swirl pair leaves about every 1,000 steps (St = 0.196). Slow spin: a triangle looks the same every 120°, so at 90° per 1000 steps the same shape comes round every 1,333 steps, close to the swirl rhythm, and the two rhythms tangle. Fast spin: the same shape every 167 steps, 6× faster than the swirls, so the wake only feels the average shape, which is round: St = 0.172, almost exactly a circle's 0.169. (Here the body cells rotate; the surface doesn't drag the fluid.)
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 3 of 4. Follow for part 4: sharpening the point.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 150). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

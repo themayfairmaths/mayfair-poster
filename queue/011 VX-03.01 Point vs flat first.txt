@@ -1,5 +1,7 @@
-Point first or flat face first? Same triangle, flipped. Point first sheds about 40% faster (St 0.196 vs 0.141).
+Same triangle, flipped round. Point into the flow and the swirls peel off the two back corners close together: St = 0.196, the fastest beat. Flat face first and the flow lets go at the front corners and wraps round a much wider wake: St = 0.141. A circle of the same width sits in between at 0.169. All at Re = 150, same grid, same probe.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 1 of 4. Follow for part 2: turning it 20° at a time.
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 150). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem

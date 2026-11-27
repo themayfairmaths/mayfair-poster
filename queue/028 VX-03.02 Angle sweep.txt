@@ -1,5 +1,7 @@
-Turning a triangle 10° at a time. By 60° it's flat face first - and the street slows right down.
+Turn an equilateral triangle 0°, 20°, 40°, 60°. Because it has 3-fold symmetry, a 60° turn takes it all the way from point-first to flat-first. The shedding rate barely moves at first (0.196 → 0.200), then drops as a side turns face-on (0.171) and bottoms out flat-first (0.141). Orientation alone changes the beat by 30%.
 
-Rendered in Python with exactly the same equations as the Mayfair Math Excel workbook. Free workbook coming soon - follow so you don't miss it.
+Part 2 of 4. Follow for part 3: what if it spins?
 
-#cfd #fluidmechanics #vortexstreet #engineering #excel #mechanicalengineering #physics
+Rendered in Python (vorticity–streamfunction solver, Re = 150). Excel workbook coming soon - follow so you don't miss it.
+
+#cfd #fluiddynamics #vortexstreet #strouhal #aerodynamics #engineering #maths #python #simulation #stem
