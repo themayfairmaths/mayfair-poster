@@ -1,0 +1,9 @@
+The maths of chaos 🦋 Swipe for the numbers behind this week's Lorenz reels.
+
+Three equations from a 1963 weather model. Two rest points that turn unstable at ρ = 24.74. A Lyapunov exponent of 0.90 that sets how fast the future runs out. A volume that shrinks by 1/860,000 every time unit, leaving a fractal of dimension 2.06. A hidden tent-shaped rule between loop tops. And proof that even halving the step size changes the answer after t ≈ 18.
+
+Rendered in Python with RK4. The Excel Lorenz workbook is coming soon.
+
+Save this for later and follow for more maths you can see.
+
+#chaos #lorenzattractor #butterflyeffect #maths #math #physics #differentialequations #python #stem #mathart
