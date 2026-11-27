@@ -1,0 +1,5 @@
+The maths behind this week's ripple-tank reels: where the wave equation comes from (Newton for every patch of water), the one-line leapfrog update every cell runs, why too big a time step explodes (the CFL limit, C ≤ 0.71), what fixed, free and sponge edges do to a wave, and three checks of our simulation against theory: calm-line angles from d·sin θ = (m + ½)λ, double-slit fringe spacing λL/d, and why sound bends round doors but light doesn't. Plus how fine the grid has to be.
+
+Rendered in Python. Excel workbook coming soon - follow so you don't miss it.
+
+#waves #physics #maths #wavequation #interference #diffraction #numericalmethods #engineering #python #stem
