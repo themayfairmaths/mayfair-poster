@@ -1,7 +1,8 @@
+# CHANGES 2026-11-28: reels every 2 hours from 08:00 Perth (was hourly), at least 60 min apart; 20:00 is a spare run.
 name: Post to Instagram
 on:
   schedule:
-    - cron: '0 0-7 * * *'        # hourly 08:00-15:00 Perth: one reel per run (one block per day; spare runs cover GitHub delays)
+    - cron: '0 0-12/2 * * *'     # every 2 hours 08:00-20:00 Perth: one reel per run (one block per day; 20:00 is a spare)
     - cron: '30 4 * * *'         # 12:30 Perth: carousel for the previous day's block (if one is ready)
   workflow_dispatch:
     inputs:
@@ -28,6 +29,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           COVER_BASE_URL: ${{ vars.COVER_BASE_URL }}
           USE_IG_AUDIO: ${{ vars.USE_IG_AUDIO }}
+          MIN_GAP_MINUTES: '60'
         run: |
           MODE="${{ github.event.inputs.mode }}"
           if [ -z "$MODE" ]; then if [ "${{ github.event.schedule }}" = "30 4 * * *" ]; then MODE=carousel; else MODE=post; fi; fi
