@@ -1,4 +1,6 @@
-"""CHANGES 2026-11-27 (c): music filter now also skips tracks with swear words in the title (first working test picked one).
+"""CHANGES 2026-11-28: one block per day now keys off the first reel posted TODAY. The old rule looked at the date each block first started,
+so block 4 (whose first reels were test posts on 27 Nov) let block 5 start early on 28 Nov.
+CHANGES 2026-11-27 (c): music filter now also skips tracks with swear words in the title (first working test picked one).
 CHANGES 2026-11-27 (b): reels with music now sent by public video_url instead of resumable upload (music was still ignored).
 CHANGES 2026-11-27: trending music now via a Facebook Login token; video_volume 0 -> 1 (Meta only accepts 1-100, so 0 may have made Instagram drop the song).
 Mayfair Math auto-poster: posts the next unfinished block from blocks.csv to Instagram via the official API.
@@ -206,17 +208,16 @@ def post_next_reel():
                 log[r[1]] = datetime.datetime.strptime(r[0][:16], '%Y-%m-%d %H:%M').replace(tzinfo=PERTH)
     if log and (now - max(log.values())).total_seconds() < GAP_MIN * 60:
         print(f'Last reel went out under {GAP_MIN} min ago - waiting for the next run.'); return
-    blocks = {}
-    for r in rows: blocks.setdefault(int(r['block']), []).append(r)
+    blocks = {}; block_of = {}
+    for r in rows: blocks.setdefault(int(r['block']), []).append(r); block_of[r['queue_file']] = int(r['block'])
+    today_posts = sorted((t, f) for f, t in log.items() if t.strftime('%Y-%m-%d') == today and f in block_of)
+    today_block = block_of[today_posts[0][1]] if today_posts else None   # the block whose reel went out first today
     for b in sorted(blocks):
         parts = sorted(blocks[b], key=lambda r: int(r['post_order']))
         todo = [r for r in parts if r['queue_file'] not in log]
         if not todo: continue
-        if not any(r['queue_file'] in log for r in parts):          # fresh block: only if no block started today
-            for bb in sorted(blocks):
-                first = [log[r['queue_file']] for r in blocks[bb] if r['queue_file'] in log]
-                if first and min(first).strftime('%Y-%m-%d') == today:
-                    print(f"Today's block (block {bb}) has started or finished - block {b} starts tomorrow at 08:00."); return
+        if today_block is not None and b != today_block:            # one block per day: only today's block may post today
+            print(f"Today's block (block {today_block}) has finished - block {b} goes tomorrow from 08:00."); return
         r = todo[0]
         print(f"Block {b}: {r['block_name']} - posting {r['queue_file']} ({len(todo) - 1} left after this)")
         if not os.path.exists(os.path.join('queue', r['queue_file'])): raise RuntimeError(f"Missing from queue/: {r['queue_file']}")
